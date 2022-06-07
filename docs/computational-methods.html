@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 2 Basic tools | EcoMods Booklet</title>
+  <title>Chapter 5 Computational methods | EcoMods Booklet</title>
   <meta name="description" content="This is HowTo of the CCTB Würzburg EcoMods members." />
   <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 2 Basic tools | EcoMods Booklet" />
+  <meta property="og:title" content="Chapter 5 Computational methods | EcoMods Booklet" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This is HowTo of the CCTB Würzburg EcoMods members." />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 2 Basic tools | EcoMods Booklet" />
+  <meta name="twitter:title" content="Chapter 5 Computational methods | EcoMods Booklet" />
   
   <meta name="twitter:description" content="This is HowTo of the CCTB Würzburg EcoMods members." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="it-infrastructure.html"/>
+<link rel="prev" href="process-based-models.html"/>
+<link rel="next" href="project-management.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -245,263 +245,143 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="basic-tools" class="section level1 hasAnchor">
-<h1><span class="header-section-number">Chapter 2</span> Basic tools<a href="basic-tools.html#basic-tools" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>The most commonly used programming languages in our lab are R and Julia.
-They are both great languages for biology-related programming and
-statistical analysis.</p>
-<p>If you already know how to program and are looking for a challenge, our
-lab members enjoy participating in <a href="https://adventofcode.com/">Advent of
-Code</a>. It forces you to think outside the box
-and will teach you some new tricks!</p>
-<div id="programming-in-general" class="section level2 hasAnchor">
-<h2><span class="header-section-number">2.1</span> Programming in general<a href="basic-tools.html#programming-in-general" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>If you have never programmed before, ….</p>
-<p>crash course</p>
+<div id="computational-methods" class="section level1 hasAnchor">
+<h1><span class="header-section-number">Chapter 5</span> Computational methods<a href="computational-methods.html#computational-methods" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Now, let’s come to the more practical part of our Beginner’s Guide.
+Here, you will get an overview on the methods that we use in our working
+group.</p>
+<div id="sensitivity-analyses" class="section level2 hasAnchor">
+<h2><span class="header-section-number">5.1</span> Sensitivity Analyses<a href="computational-methods.html#sensitivity-analyses" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Anne</p>
+<div id="overview" class="section level3 hasAnchor">
+<h3><span class="header-section-number">5.1.1</span> Overview<a href="computational-methods.html#overview" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>General broad overview in <strong>Sensitivity Analysis in Practice : A Guide
+to Assessing Scientific Models</strong> <span class="citation">(<span class="citeproc-not-found" data-reference-id="saltelli2002"><strong>???</strong></span>)</span></p>
+<p>Comparison of different sensitivity analysis methods: A performance
+comparison of sensitivity analysis methods for building energy models
+Idea: Run the sensitivity analysis not on the data itself but on a
+comparison between data and model (as you would use in the validation)
+-&gt; This is the measure to which you want to know the sensitivity</p>
 </div>
-<div id="r" class="section level2 hasAnchor">
-<h2><span class="header-section-number">2.2</span> R<a href="basic-tools.html#r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><a href="https://www.r-project.org/">R</a> is very well-established and probably
-has the most support from all the languages we use. Most of the time,
-you can copy-paste your error message from R into Google, and you will
-find several solutions for your problem. A very helpful website is
-<a href="https://stackoverflow.com/">Stack Overflow</a>.</p>
-<div id="interface" class="section level3 hasAnchor">
-<h3><span class="header-section-number">2.2.1</span> Interface<a href="basic-tools.html#interface" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>In our lab, most people use <a href="https://www.rstudio.com/">RStudio</a> when
-they are working in R. RStudio allows you to very easily write and
-execute your scripts, create plots and keep an eye on your environment.
-It also includes a helpful debugging mode. Other, not as commonly used
-GUIs are <a href="https://rkward.kde.org/">RKWard</a>,
-<a href="https://www.blueskystatistics.com/Default.asp">BlueSky</a> and <a href="https://socialsciences.mcmaster.ca/jfox/Misc/Rcmdr/">R
-Commander</a>.</p>
+<div id="local" class="section level3 hasAnchor">
+<h3><span class="header-section-number">5.1.2</span> Local<a href="computational-methods.html#local" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>= One-factor-at-a-time (OAT)</p>
 </div>
-<div id="resources" class="section level3 hasAnchor">
-<h3><span class="header-section-number">2.2.2</span> Resources<a href="basic-tools.html#resources" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>To get started, there are several books on how to use R.</p>
-<p><a href="https://r4ds.had.co.nz/">R for Data Science</a>: “You’ll learn how to get
-your data into R, get it into the most useful structure, transform it,
-visualise it and model it.”</p>
-<p><a href="https://adv-r.hadley.nz/">Advanced R</a>: “The book is designed primarily
-for R users who want to improve their programming skills and
-understanding of the language. It should also be useful for programmers
-coming to R from other languages, as help you to understand why R works
-the way it does.”</p>
-<p>Further reading:</p>
-<ul>
-<li><p>Coding Etiquette (in R) - slides from <em>Anne</em> prepared for BioInfo F2
-2020 (Where to store?)</p></li>
-<li><p>Troubleshooting in R - Slides from <em>Anne</em> prepared for BioInfo F2
-2020</p></li>
-<li><p>R for Dummies, Andrie de Vries &amp; Joris Meys, 2015 (PDF available,
-ask Jana)</p></li>
-</ul>
-</div>
-<div id="packages" class="section level3 hasAnchor">
-<h3><span class="header-section-number">2.2.3</span> Packages<a href="basic-tools.html#packages" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>What are <a href="https://r-pkgs.org/">R packages</a>?</p>
-<p>If you have a problem that you need a certain function to solve, many
-times you do not need to write that function from scratch yourself.
-Usually, another (more skilled) person has already written some code
-that solves this problem. These “packages of code” can be uploaded to
-CRAN (the Comprehensive R Archive Network) and then downloaded to be
-used by other users.</p>
-<p>An example: You have a nice plot and want to ensure it is easy to read
-and interpret for colorblind people. Now you could set all of your 200
-colors by hand so that it is not the default red-green nightmare, but it
-is much easier to just download a package called “viridis” that contains
-multiple color palettes that are optimized for this very use. Then, all
-you need to do is tell R to use the viridis palette instead of setting
-all colors by hand, which would get very tedious. Installing and loading
-a package via CRAN:</p>
-<pre><code>install.packages(&quot;PackageName&quot;)
-library(PackageName)</code></pre>
-<p>Note that packages need to be loaded into your environment using the
-<code>library()</code> command in order for R to use them. You can also download
-packages that are not yet on CRAN using
-<a href="https://www.r-project.org/nosvn/pandoc/devtools.html">devtools</a>.</p>
-<p>Commonly used packages in our working group include (but are not limited
-to):</p>
-<ul>
-<li><p><a href="https://www.tidyverse.org/">tidyverse</a></p></li>
-<li><p><a href="https://here.r-lib.org/">here</a></p></li>
-<li><p><a href="https://www.r-project.org/nosvn/pandoc/devtools.html">devtools</a></p></li>
-<li><p><a href="https://ggplot2.tidyverse.org/">ggplot2</a></p></li>
-<li><p><a href="https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html">viridis</a></p></li>
-<li><p><a href="https://cran.r-project.org/web/packages/raster/index.html">raster</a></p></li>
-<li><p><a href="https://cran.r-project.org/web/packages/rgdal/index.html">rgdal</a></p></li>
-</ul>
-</div>
-<div id="rmd" class="section level3 hasAnchor">
-<h3><span class="header-section-number">2.2.4</span> Rmd<a href="basic-tools.html#rmd" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>R Markdown is a great way to create documents in HTML, Word or PDF
-format. Rmds can include chunks of code which create the tables and
-plots of the document. This way, you don’t have to update your document
-parallel to your code, as you keep both your code to create your plots
-and said plots in the file. This file was also created using Rmd!</p>
-<p><a href="https://bookdown.org/yihui/rmarkdown/">Best overall guide</a></p>
-<p>A future alternative might be <a href="https://quarto.org/">quarto</a>.</p>
-<p>Resources from course SystemAdmin 2020, prepared by <em>Anne</em>. Where to
-store?</p>
+<div id="global" class="section level3 hasAnchor">
+<h3><span class="header-section-number">5.1.3</span> Global<a href="computational-methods.html#global" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Morris screening and enhancement as used in the R package sensitivity
+(Campolongo et al.):
+<a href="https://doi.org/10.1016/j.envsoft.2006.10.004" class="uri">&lt;https://doi.org/10.1016/j.envsoft.2006.10.004&gt;</a>
+<span class="citation">(<span class="citeproc-not-found" data-reference-id="campolongo2007"><strong>???</strong></span>)</span></p>
 </div>
 </div>
-<div id="julia-the-language" class="section level2 hasAnchor">
-<h2><span class="header-section-number">2.3</span> Julia, the language<a href="basic-tools.html#julia-the-language" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><a href="https://julialang.org/">Julia</a> is a relatively new programming language
-with a significantly higher performance than R. For complex models that
-take a lot of time to run in R, it might make sense to transfer them to
-Julia. While it has many advantages, it is not as well-known as R, so
-you may need to search for an explanation for your error message a bit
-longer. Julia has its own <a href="https://discourse.julialang.org/">Discourse</a>
-page with many helpful entries and tutorials as well.</p>
-<p>The Julia <a href="https://docs.julialang.org/en/v1/">Documentation</a> is also
-VERY good.</p>
-<p>To quickly look up Julia syntax, you can use this <a href="https://juliadocs.github.io/Julia-Cheat-Sheet/">Cheat
-Sheet</a>.</p>
-<div id="best-tutorials" class="section level3 hasAnchor">
-<h3><span class="header-section-number">2.3.1</span> Best tutorials<a href="basic-tools.html#best-tutorials" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>To get started,
-<a href="https://benlauwens.github.io/ThinkJulia.jl/latest/book.html">here</a> is a
-very nice book for beginners by Ben Lauwens and Allen Downey that
-explains not only the Julia language, but also introduces the concept of
-programming in general.</p>
-<p><a href="https://juliaacademy.com/courses">JuliaAcademy</a> offers an introductory
-course that is tried and liked by Robin.</p>
-<p>If you are not that into reading, the official Julia Programming
-Language <a href="https://www.youtube.com/channel/UC9IuUwwE2xdjQUT_LMLONoA">Youtube
-channel</a> has
-some very nice tutorials structured by playlists. One especially helpful
-playlist is <a href="https://www.youtube.com/watch?v=ub3tqCWZmo4&amp;list=PLP8iPy9hna6Qpx0MgGyElJ5qFlaIXYf1R">Julia Programming for Nervous
-Beginners</a>.
-They also hold the annual <a href="https://juliacon.org/2022/">JuliaCon</a> online
-and upload the speaker’s talks to Youtube if you cannot be there live.</p>
+<div id="virtual-ecologist" class="section level2 hasAnchor">
+<h2><span class="header-section-number">5.2</span> Virtual ecologist<a href="computational-methods.html#virtual-ecologist" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 </div>
-<div id="plotting-in-julia" class="section level3 hasAnchor">
-<h3><span class="header-section-number">2.3.2</span> Plotting in Julia<a href="basic-tools.html#plotting-in-julia" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Plots in Julia can be a bit more tricky than in R (but that might be
-because we are used to plotting in R - don’t let this discourage you
-from plotting your heart out in Julia if that is what you want to do!).
-Here are some packages that may help facilitate your plotting
-adventures:</p>
-<ul>
-<li><p><a href="https://juliapackages.com/c/graphical-plotting">This</a> page shows a
-list of graphical plotting packages</p></li>
-<li><p><a href="https://makie.juliaplots.org/stable/">GLMakie</a> is used by <em>Robin</em></p></li>
-</ul>
+<div id="forward-simulations" class="section level2 hasAnchor">
+<h2><span class="header-section-number">5.3</span> Forward simulations<a href="computational-methods.html#forward-simulations" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 </div>
-<div id="interface-1" class="section level3 hasAnchor">
-<h3><span class="header-section-number">2.3.3</span> Interface<a href="basic-tools.html#interface-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>As for R, you can choose from a variety of interfaces for Julia. In our
-working group, these are the most common ones:</p>
-<ul>
-<li><p><a href="https://junolab.org/">Atom and Juno</a> for julia.
-<a href="https://techytok.com/atom-and-juno-setup-for-julia/">Here</a> is a
-nice tutorial on how to set it up. However, even though popular in
-our lab, Juno will receive no more feature updates as of March 2022,
-so if you are new to Julia, it might be best to choose a different
-IDE.</p></li>
-<li><p><a href="https://www.julia-vscode.org/">VSCode</a> is the successor of Juno. It
-works in a similar way and is also used by some members of our lab
-and is at this point the recommended option to use.</p></li>
-<li><p>if you are interested in using a Computational Notebook (see section
-below), <a href="https://jupyter.org/">Jupyter</a> might be a good fit for you.
-Learn how to use Jupyter and Julia together
-<a href="https://datatofish.com/add-julia-to-jupyter/">here</a>. This is still
-a bit buggy, though.</p></li>
-</ul>
+<div id="basic-phylogenetic-analyses" class="section level2 hasAnchor">
+<h2><span class="header-section-number">5.4</span> Basic Phylogenetic analyses<a href="computational-methods.html#basic-phylogenetic-analyses" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Robin</p>
+</div>
+<div id="parameter-optimization" class="section level2 hasAnchor">
+<h2><span class="header-section-number">5.5</span> Parameter optimization<a href="computational-methods.html#parameter-optimization" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="direct-methods" class="section level3 hasAnchor">
+<h3><span class="header-section-number">5.5.1</span> Direct methods<a href="computational-methods.html#direct-methods" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Differential evolution optimization Differential Evolution with DEoptim
+(R package) How does differential evolution work?</p>
+</div>
+<div id="bayesian-calibration" class="section level3 hasAnchor">
+<h3><span class="header-section-number">5.5.2</span> Bayesian Calibration<a href="computational-methods.html#bayesian-calibration" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>florianhartig/LearningBayes: An introduction to Bayesian statistics
+Bayesian Tools - General-Purpose MCMC and SMC Samplers and Tools for
+Bayesian Statistics Inverse modeling
+<a href="https://arxiv.org/ftp/arxiv/papers/2007/2007.15580.pdf" class="uri">https://arxiv.org/ftp/arxiv/papers/2007/2007.15580.pdf</a> ###
+Emulatoren Approximieren das Modell selbst “modelling a model” /
+“meta-model”</p>
+</div>
+<div id="neural-networks" class="section level3 hasAnchor">
+<h3><span class="header-section-number">5.5.3</span> Neural networks<a href="computational-methods.html#neural-networks" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><a href="https://arxiv.org/ftp/arxiv/papers/2007/2007.15580.pdf" class="uri">https://arxiv.org/ftp/arxiv/papers/2007/2007.15580.pdf</a>
+<a href="https://link.springer.com/chapter/10.1007%2F978-3-030-44584-3_43" class="uri">https://link.springer.com/chapter/10.1007%2F978-3-030-44584-3_43</a>
+<a href="https://royalsocietypublishing.org/doi/10.1098/rsbl.2017.0660" class="uri">https://royalsocietypublishing.org/doi/10.1098/rsbl.2017.0660</a> ####
+Bayesian <a href="https://bg.copernicus.org/articles/15/5801/2018/" class="uri">https://bg.copernicus.org/articles/15/5801/2018/</a></p>
+</div>
+<div id="tips-and-tricks" class="section level3 hasAnchor">
+<h3><span class="header-section-number">5.5.4</span> Tips and Tricks<a href="computational-methods.html#tips-and-tricks" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>For all methods, first, run an optimization on a dataset that you
+produced with the model. That way, you can find out whether the
+optimization algorithm can find the parameters with which you modelled
+the dataset. This can help to verify that your optimization method
+works.</p>
 </div>
 </div>
-<div id="git" class="section level2 hasAnchor">
-<h2><span class="header-section-number">2.4</span> Git<a href="basic-tools.html#git" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Git is a great software that allows you to keep track of the changes you
-make in your code (version control). This way, you will not need to keep
-several files named “Code_02_revised” and “Code_02_revised_changed” etc,
-which can quickly get confusing. There are different servers that you
-can store your repositories on, the most common ones being
-<a href="https://github.com/">GitHub</a> and <a href="https://about.gitlab.com/">GitLab</a>.
-You can install git on your PC and use it via the commandline, or you
-can use it with the help of a UI, like <a href="https://desktop.github.com/">GitHub
-Desktop</a>. This is a very helpful <a href="https://github.com/UnseenWizzard/git_training">Training
-and Tutorial</a> that
-explains what git is and how to use it very nicely.</p>
+<div id="machine-learning" class="section level2 hasAnchor">
+<h2><span class="header-section-number">5.6</span> Machine Learning<a href="computational-methods.html#machine-learning" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>If you are interested in machine learning,
+<a href="https://theoreticalecology.github.io/machinelearning/index.html">here</a>
+is a course by our colleague Florian Hartig from the University of
+Regensburg. This course is held in R.</p>
 </div>
-<div id="computational-notebooks" class="section level2 hasAnchor">
-<h2><span class="header-section-number">2.5</span> Computational Notebooks<a href="basic-tools.html#computational-notebooks" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>These are files that allow you to write descriptive text, code, and the
-output of that code. They are particularly useful for:</p>
-<ul>
-<li>learning and teaching coding, because the code and its output are
-shown together, so you always know what does what</li>
-<li>documenting analysis/model development, because, besides the outputs
-of the code you are trying out, descriptive text can help elaborate
-your ideas better, and even include figures or links in the same
-file as the code you are working on.</li>
-<li>sharing computational work: Your collaborator/supervisor will be
-able to follow your reasoning with the descriptive text and check
-your work in the code blocks and its outputs.</li>
-</ul>
-<p>See the complete tutorial
-<a href="https://github.com/FellowsFreiesWissen/computational_notebooks">here</a>.</p>
+<div id="phylogenetic-analyses" class="section level2 hasAnchor">
+<h2><span class="header-section-number">5.7</span> Phylogenetic Analyses<a href="computational-methods.html#phylogenetic-analyses" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 </div>
-<div id="bash-commands" class="section level2 hasAnchor">
-<h2><span class="header-section-number">2.6</span> Bash commands<a href="basic-tools.html#bash-commands" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>When we let our models run, they tend to need a lot of computational
-power. Running experiments on your laptop can take days, weeks or even
-months. Therefore, we can send our scripts to more powerful machines
-from the University infrastructure. To tell the computer “execute script
-XXX” you need to write a short shell using bash.</p>
-<p>A nice tool to use for bash scripts is
-<a href="https://github.com/koalaman/shellcheck">shellcheck</a> - Robin</p>
-<p>For an example bash script see section IT infrastructure - Using HPC
-Julia</p>
+<div id="functional-analyses" class="section level2 hasAnchor">
+<h2><span class="header-section-number">5.8</span> Functional Analyses<a href="computational-methods.html#functional-analyses" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Wright et al (2005) provides a good basis for ‘trusting’ trait-trait
+associations above 5-fold variation and/or n=20 spp, within a study.
+Although Wright et al. show trait correlations with as few as 4 species.</p>
+<p>Wright, Ian J., et al. Assessing the generality of global leaf trait
+relationships. New phytologist 166,(2005): 485-496.</p>
+<p>For multivariate analyses: i) MANOVA (because traits are not independent
+from one another) and canonical discriminant analyses (CDA) =Y check R
+package candisc ii) trait network analyses (R package igraph - Csardi
+and Nepusz, 2006) + Mantel test for comparing trait correlations across
+groups (e.g. taxonomic, trophic or guild groups) iii) PCA (useful for
+visualization as well)</p>
 </div>
-<div id="latex" class="section level2 hasAnchor">
-<h2><span class="header-section-number">2.7</span> latex<a href="basic-tools.html#latex" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Latex is a software to write text. You can find thousands of tutorials
-online. If you want to work with latex on shared documents, consider
-<a href="https://de.overleaf.com/">overleaf</a>.</p>
-</div>
-<div id="advanced" class="section level2 hasAnchor">
-<h2><span class="header-section-number">2.8</span> Advanced<a href="basic-tools.html#advanced" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="singularity" class="section level3 hasAnchor">
-<h3><span class="header-section-number">2.8.1</span> Singularity<a href="basic-tools.html#singularity" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><a href="https://sylabs.io/guides/3.5/user-guide/quick_start.html" class="uri">https://sylabs.io/guides/3.5/user-guide/quick_start.html</a></p>
-<p>Singularity is a way to use containers, small virtual machines that use
-the resources of the computer they run on but have their own
-environment. This will only be a short explanation on how to use them
-otherwise refer to the official documentation.</p>
-<p>Before a container can be used it first has to be built. This can be
-done by either using a <code>.def</code> file (Only if you have sudo rights on the
-local machine and under Linux so use Linux or WSL) or you can get it on
-the base of an existing container in the Singularity library or from
-docker. Prebuilt containers on the gaias are stored in
-<code>/storage/singularity_images</code>. <code>ecomodsdm.sif</code> is a container based on
-<code>docker://rocker/geospatial</code></p>
-<p>The main ways to use Singularity containers are with the commands:<br />
-- - <code>singularity shell [container.sif]</code> opens a shell in the provided
-container - <code>singularity exec [container.sif]</code> This executes a
-predefined command as defined in the definition file -
-<code>singularity exec [container.sif] [command]</code> This only executes the
-requested command e.g. opens R or executes a program<br />
-By default <code>/home/$USER</code> is bound into the container at execution. If
-more folders need to be bound into it do this with the
-<code>--bind [local]:[container]</code> option</p>
-</div>
-<div id="emacs-vim-and-spacemacs" class="section level3 hasAnchor">
-<h3><span class="header-section-number">2.8.2</span> EMACS, Vim, and Spacemacs<a href="basic-tools.html#emacs-vim-and-spacemacs" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>????</p>
-</div>
-<div id="regex" class="section level3 hasAnchor">
-<h3><span class="header-section-number">2.8.3</span> Regex<a href="basic-tools.html#regex" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><em>Robin</em></p>
-<p>A handy website that goes through the basics of Regular Expression
-grammar:<br />
-<a href="https://ryanstutorials.net/regular-expressions-tutorial" class="uri">https://ryanstutorials.net/regular-expressions-tutorial</a></p>
-<p><a href="https://regex101.com/" class="uri">https://regex101.com/</a></p>
-</div>
-</div>
-<div id="backup-and-storage-of-data-and-code" class="section level2 hasAnchor">
-<h2><span class="header-section-number">2.9</span> Backup and Storage of Data and Code<a href="basic-tools.html#backup-and-storage-of-data-and-code" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="sdms" class="section level2 hasAnchor">
+<h2><span class="header-section-number">5.9</span> SDMs<a href="computational-methods.html#sdms" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Tutorials:</p>
+<p>Damaris Zurell: <a href="https://damariszurell.github.io/SDM-Intro/" class="uri">https://damariszurell.github.io/SDM-Intro/</a></p>
+<p>Babak Naimi: <a href="https://www.youtube.com/watch?v=83dMS3bcjJM" class="uri">https://www.youtube.com/watch?v=83dMS3bcjJM</a></p>
+<pre><code>         https://www.biogeoinformatics.org/
+         </code></pre>
+<p>Daniel Griffith:
+<a href="https://griffithdan.github.io/pages/outreach/SDM-Workshop-OSU-FALL2017.pdf" class="uri">https://griffithdan.github.io/pages/outreach/SDM-Workshop-OSU-FALL2017.pdf</a></p>
+<p>Further:</p>
+<p>ModestR Software: <a href="http://www.ipez.es/ModestR/" class="uri">http://www.ipez.es/ModestR/</a></p>
+<p>ModestR Tutorial:
+<a href="https://www.slideshare.net/modestrsoftware/21-creating-virtual-species-and-calculating-simple-ensemble-models-with-r-that-can-be-later-used-with-version-modestr-56-or-higher" class="uri">https://www.slideshare.net/modestrsoftware/21-creating-virtual-species-and-calculating-simple-ensemble-models-with-r-that-can-be-later-used-with-version-modestr-56-or-higher</a></p>
+<p>Earlier models:</p>
+<p>BIOCLIM: <a href="https://doi.org/10.1111/ddi.12144" class="uri">https://doi.org/10.1111/ddi.12144</a></p>
+<p>Packages:</p>
+<p>sdm: <a href="https://cran.r-project.org/web/packages/sdm/sdm.pdf" class="uri">https://cran.r-project.org/web/packages/sdm/sdm.pdf</a></p>
+<p>kuenm: <a href="https://peerj.com/articles/6281/" class="uri">https://peerj.com/articles/6281/</a></p>
+<p>virtualspecies: <a href="https://doi.org/10.1111/ecog.01388" class="uri">https://doi.org/10.1111/ecog.01388</a></p>
+<pre><code>           https://cran.r-project.org/web/packages/virtualspecies/virtualspecies.pdf
+           </code></pre>
+<p>For Maxent type of models:</p>
+<p>Evaluating Maxent niche models with ENMeval:
+<a href="https://doi.org/10.1111/2041-210X.12261" class="uri">https://doi.org/10.1111/2041-210X.12261</a></p>
+<p>For ensemble models:</p>
+<p>Biomod Paper: <a href="https://doi.org/10.1111/j.1600-0587.2008.05742.x" class="uri">https://doi.org/10.1111/j.1600-0587.2008.05742.x</a></p>
+<p>Biomod2 package:</p>
+<p><a href="https://cran.r-project.org/web/packages/biomod2/biomod2.pdf" class="uri">https://cran.r-project.org/web/packages/biomod2/biomod2.pdf</a></p>
+<p><a href="https://github.com/biomodhub/biomod2" class="uri">https://github.com/biomodhub/biomod2</a></p>
+<p>ESDM: <a href="https://doi.org/10.1111/2041-210X.13283" class="uri">https://doi.org/10.1111/2041-210X.13283</a></p>
+<p>Stacked SDMs (for species richness/diversity):</p>
+<p>SSDM: <a href="https://cran.r-project.org/web/packages/SSDM/vignettes/SSDM.html" class="uri">https://cran.r-project.org/web/packages/SSDM/vignettes/SSDM.html</a></p>
+<p>Joint-SDMs for co-occurrence data:</p>
+<p>with HMSC: <a href="https://doi.org/10.1111/2041-210X.13345" class="uri">https://doi.org/10.1111/2041-210X.13345</a></p>
+<p>sjSDM: <a href="https://doi.org/10.1111/2041-210X.13687" class="uri">https://doi.org/10.1111/2041-210X.13687</a></p>
+<pre><code>   https://github.com/TheoreticalEcology/s-jSDM</code></pre>
+<p>Useful literature:</p>
+<p><a href="https://doi.org/10.1111/ddi.12892" class="uri">https://doi.org/10.1111/ddi.12892</a></p>
+<p>ODMAP: A tandard protocol for reporting SDMs:
+<a href="https://doi.org/10.1111/ecog.04960" class="uri">https://doi.org/10.1111/ecog.04960</a></p>
+<p>Correcting sampling bias in MAxent: <a href="https://doi.org/10.1111/ddi.12096" class="uri">https://doi.org/10.1111/ddi.12096</a></p>
 
 </div>
 </div>
@@ -510,8 +390,8 @@ grammar:<br />
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="it-infrastructure.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="process-based-models.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="project-management.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -542,7 +422,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/USERNAME/REPO/edit/BRANCH/01-basic-tools.Rmd",
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/04-methods.Rmd",
 "text": "Edit"
 },
 "history": {
