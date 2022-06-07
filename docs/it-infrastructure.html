@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 IT infrastructure | EcoMods Booklet</title>
+  <meta name="description" content="This is HowTo of the CCTB Würzburg EcoMods members." />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 IT infrastructure | EcoMods Booklet" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="This is HowTo of the CCTB Würzburg EcoMods members." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 IT infrastructure | EcoMods Booklet" />
+  
+  <meta name="twitter:description" content="This is HowTo of the CCTB Würzburg EcoMods members." />
+  
+
+<meta name="author" content="The EcoMods Würzburg" />
+
+
+<meta name="date" content="2022-06-07" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="basic-tools.html"/>
+<link rel="next" href="parts.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Hello and welcome to the EcoMods working group!</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#usage"><i class="fa fa-check"></i><b>1.1</b> Usage</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#render-book"><i class="fa fa-check"></i><b>1.2</b> Render book</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#preview-book"><i class="fa fa-check"></i><b>1.3</b> Preview book</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="basic-tools.html"><a href="basic-tools.html"><i class="fa fa-check"></i><b>2</b> Basic tools</a><ul>
+<li class="chapter" data-level="2.1" data-path="basic-tools.html"><a href="basic-tools.html#programming-in-general"><i class="fa fa-check"></i><b>2.1</b> Programming in general</a></li>
+<li class="chapter" data-level="2.2" data-path="basic-tools.html"><a href="basic-tools.html#r"><i class="fa fa-check"></i><b>2.2</b> R</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="basic-tools.html"><a href="basic-tools.html#interface"><i class="fa fa-check"></i><b>2.2.1</b> Interface</a></li>
+<li class="chapter" data-level="2.2.2" data-path="basic-tools.html"><a href="basic-tools.html#resources"><i class="fa fa-check"></i><b>2.2.2</b> Resources</a></li>
+<li class="chapter" data-level="2.2.3" data-path="basic-tools.html"><a href="basic-tools.html#packages"><i class="fa fa-check"></i><b>2.2.3</b> Packages</a></li>
+<li class="chapter" data-level="2.2.4" data-path="basic-tools.html"><a href="basic-tools.html#rmd"><i class="fa fa-check"></i><b>2.2.4</b> Rmd</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="basic-tools.html"><a href="basic-tools.html#julia-the-language"><i class="fa fa-check"></i><b>2.3</b> Julia, the language</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="basic-tools.html"><a href="basic-tools.html#best-tutorials"><i class="fa fa-check"></i><b>2.3.1</b> Best tutorials</a></li>
+<li class="chapter" data-level="2.3.2" data-path="basic-tools.html"><a href="basic-tools.html#plotting-in-julia"><i class="fa fa-check"></i><b>2.3.2</b> Plotting in Julia</a></li>
+<li class="chapter" data-level="2.3.3" data-path="basic-tools.html"><a href="basic-tools.html#interface-1"><i class="fa fa-check"></i><b>2.3.3</b> Interface</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="basic-tools.html"><a href="basic-tools.html#git"><i class="fa fa-check"></i><b>2.4</b> Git</a></li>
+<li class="chapter" data-level="2.5" data-path="basic-tools.html"><a href="basic-tools.html#computational-notebooks"><i class="fa fa-check"></i><b>2.5</b> Computational Notebooks</a></li>
+<li class="chapter" data-level="2.6" data-path="basic-tools.html"><a href="basic-tools.html#bash-commands"><i class="fa fa-check"></i><b>2.6</b> Bash commands</a></li>
+<li class="chapter" data-level="2.7" data-path="basic-tools.html"><a href="basic-tools.html#latex"><i class="fa fa-check"></i><b>2.7</b> latex</a></li>
+<li class="chapter" data-level="2.8" data-path="basic-tools.html"><a href="basic-tools.html#advanced"><i class="fa fa-check"></i><b>2.8</b> Advanced</a><ul>
+<li class="chapter" data-level="2.8.1" data-path="basic-tools.html"><a href="basic-tools.html#singularity"><i class="fa fa-check"></i><b>2.8.1</b> Singularity</a></li>
+<li class="chapter" data-level="2.8.2" data-path="basic-tools.html"><a href="basic-tools.html#emacs-vim-and-spacemacs"><i class="fa fa-check"></i><b>2.8.2</b> EMACS, Vim, and Spacemacs</a></li>
+<li class="chapter" data-level="2.8.3" data-path="basic-tools.html"><a href="basic-tools.html#regex"><i class="fa fa-check"></i><b>2.8.3</b> Regex</a></li>
+</ul></li>
+<li class="chapter" data-level="2.9" data-path="basic-tools.html"><a href="basic-tools.html#backup-and-storage-of-data-and-code"><i class="fa fa-check"></i><b>2.9</b> Backup and Storage of Data and Code</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="it-infrastructure.html"><a href="it-infrastructure.html"><i class="fa fa-check"></i><b>3</b> IT infrastructure</a><ul>
+<li class="chapter" data-level="3.1" data-path="it-infrastructure.html"><a href="it-infrastructure.html#ssh"><i class="fa fa-check"></i><b>3.1</b> SSH</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="it-infrastructure.html"><a href="it-infrastructure.html#connect-with-ssh"><i class="fa fa-check"></i><b>3.1.1</b> Connect with SSH</a></li>
+<li class="chapter" data-level="3.1.2" data-path="it-infrastructure.html"><a href="it-infrastructure.html#using-ssh-to-authenticate-your-github-account-todo-move-to-github-section"><i class="fa fa-check"></i><b>3.1.2</b> Using SSH to authenticate your Github account TODO: move to Github section</a></li>
+<li class="chapter" data-level="3.1.3" data-path="it-infrastructure.html"><a href="it-infrastructure.html#ssh-alias"><i class="fa fa-check"></i><b>3.1.3</b> ssh alias</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="it-infrastructure.html"><a href="it-infrastructure.html#using-hpc-julia"><i class="fa fa-check"></i><b>3.2</b> Using HPC Julia</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="it-infrastructure.html"><a href="it-infrastructure.html#calculate-you-co2-emission-from-hpc"><i class="fa fa-check"></i><b>3.2.1</b> Calculate you CO2 Emission from HPC</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="it-infrastructure.html"><a href="it-infrastructure.html#using-slurm"><i class="fa fa-check"></i><b>3.3</b> Using slurm</a></li>
+<li class="chapter" data-level="3.4" data-path="it-infrastructure.html"><a href="it-infrastructure.html#using-cctb-server-gaias-and-planets"><i class="fa fa-check"></i><b>3.4</b> Using CCTB Server = gaias and planets</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="it-infrastructure.html"><a href="it-infrastructure.html#opening-an-rstudio-server-on-the-planets"><i class="fa fa-check"></i><b>3.4.1</b> Opening an Rstudio server on the planets</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="it-infrastructure.html"><a href="it-infrastructure.html#x2go"><i class="fa fa-check"></i><b>3.5</b> X2GO</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="parts.html"><a href="parts.html"><i class="fa fa-check"></i><b>4</b> Parts</a></li>
+<li class="chapter" data-level="5" data-path="footnotes-and-citations.html"><a href="footnotes-and-citations.html"><i class="fa fa-check"></i><b>5</b> Footnotes and citations</a><ul>
+<li class="chapter" data-level="5.1" data-path="footnotes-and-citations.html"><a href="footnotes-and-citations.html#footnotes"><i class="fa fa-check"></i><b>5.1</b> Footnotes</a></li>
+<li class="chapter" data-level="5.2" data-path="footnotes-and-citations.html"><a href="footnotes-and-citations.html#citations"><i class="fa fa-check"></i><b>5.2</b> Citations</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="blocks.html"><a href="blocks.html"><i class="fa fa-check"></i><b>6</b> Blocks</a><ul>
+<li class="chapter" data-level="6.1" data-path="blocks.html"><a href="blocks.html#equations"><i class="fa fa-check"></i><b>6.1</b> Equations</a></li>
+<li class="chapter" data-level="6.2" data-path="blocks.html"><a href="blocks.html#theorems-and-proofs"><i class="fa fa-check"></i><b>6.2</b> Theorems and proofs</a></li>
+<li class="chapter" data-level="6.3" data-path="blocks.html"><a href="blocks.html#callout-blocks"><i class="fa fa-check"></i><b>6.3</b> Callout blocks</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="sharing-your-book.html"><a href="sharing-your-book.html"><i class="fa fa-check"></i><b>7</b> Sharing your book</a><ul>
+<li class="chapter" data-level="7.1" data-path="sharing-your-book.html"><a href="sharing-your-book.html#publishing"><i class="fa fa-check"></i><b>7.1</b> Publishing</a></li>
+<li class="chapter" data-level="7.2" data-path="sharing-your-book.html"><a href="sharing-your-book.html#pages"><i class="fa fa-check"></i><b>7.2</b> 404 pages</a></li>
+<li class="chapter" data-level="7.3" data-path="sharing-your-book.html"><a href="sharing-your-book.html#metadata-for-sharing"><i class="fa fa-check"></i><b>7.3</b> Metadata for sharing</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">EcoMods Booklet</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="it-infrastructure" class="section level1 hasAnchor">
+<h1><span class="header-section-number">Chapter 3</span> IT infrastructure<a href="it-infrastructure.html#it-infrastructure" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>See the <a href="https://wuecampus2.uni-wuerzburg.de/moodle/course/view.php?id=40523">CCTB WueCampus
+course</a>
+for documentation of our computing tools and tutorials for common
+software.</p>
+<p>In general, there are two powerful computers that you can run your code
+on - the Julia HPC cluster and the gaias. The gaias are the owned by the
+CCTB, while the Julia HPC belongs to the faculties of Biology, Physics
+and Chemistry and is maintained by the Rechenzentrum. See below on how
+to connect to the respective servers.</p>
+<div id="ssh" class="section level2 hasAnchor">
+<h2><span class="header-section-number">3.1</span> SSH<a href="it-infrastructure.html#ssh" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="connect-with-ssh" class="section level3 hasAnchor">
+<h3><span class="header-section-number">3.1.1</span> Connect with SSH<a href="it-infrastructure.html#connect-with-ssh" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><em>Anne</em></p>
+<p>I have a .pdf tutorial - where should I store that?</p>
+<p>There’s several ways to connect directly to the servers. Apple and Linux
+have inbuilt ssh clients in the terminal. From Windows 10 onward
+powershell also comes with an ssh client, though be aware it does have
+some hiccups. For simple tasks
+<a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/">PuTTy</a> is
+sufficient. If you’re trying something more complicated (ssh tunnel) you
+could try git bash or get <a href="https://docs.microsoft.com/en-us/windows/wsl/about">Windows Subsystem for
+Linux</a></p>
+</div>
+<div id="using-ssh-to-authenticate-your-github-account-todo-move-to-github-section" class="section level3 hasAnchor">
+<h3><span class="header-section-number">3.1.2</span> Using SSH to authenticate your Github account TODO: move to Github section<a href="it-infrastructure.html#using-ssh-to-authenticate-your-github-account-todo-move-to-github-section" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>SSH stands for secure shell protocol. It allows you to securely connect
+to a remote computer using a commandline interface. Please note that you
+must be connected to the university network (e.g. via VPN) to access our
+servers.</p>
+<div id="step-1-generate-an-ssh-keypair-on-the-server-and-copy-public-key-to-github" class="section level4 hasAnchor">
+<h4><span class="header-section-number">3.1.2.1</span> Step 1: Generate an SSH keypair on the server and copy public key to Github<a href="it-infrastructure.html#step-1-generate-an-ssh-keypair-on-the-server-and-copy-public-key-to-github" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>TODO what github docs should be checked? For details, check Github Docs.
+Following instructions are adapted from here. Log in to the server (e.g.
+Curta). Check if you have existing ssh keys with</p>
+<pre><code>ls -al ~/.ssh</code></pre>
+<p>Generate a new ssh key (If you have existing keys, jump to step 5):
+#TODO what do you mean jump to step 5?? there is only two steps?</p>
+<pre><code>ssh-keygen -t ed25519 -C &quot;your_email@example.com</code></pre>
+<p>Make sure that you use the email that you also used for your Github
+account. Accept the default file name by pressing Enter key and type a
+password when prompted. You can also leave the password blank if you
+don’t want to protect your SSH key with an additional password.</p>
+<p>Start your ssh agent:</p>
+<pre><code>eval &quot;$(ssh-agent -s)&quot;</code></pre>
+<p>Add your new ssh key to ssh agent. If your key has a different name,
+replace id_ed25510 with the respective name of your key</p>
+<pre><code>ssh-add -K ~/.ssh/id_ed25519</code></pre>
+<p>Add your new ssh key to your Github account (the public key): First,
+copy the public ssh key with (or any other method of copying of your
+choice):</p>
+<pre><code>cat ~/.ssh/id_ed25519.pub</code></pre>
+<p>Now the key should be printed to the terminal. Copy the key (it starts
+with ssh-ed255…. and ends with your email address) to the clipboard.
+Go to your Github account, click the icon on the upper-right corner &gt;
+Settings &gt; SSH and GPG Keys &gt; Click New SSH key. Give your new ssh key
+a name and paste the copied key in the key text area. Then click Add SSH
+Key and if prompted, type your account’s password.</p>
+</div>
+<div id="step-2-test-the-connection" class="section level4 hasAnchor">
+<h4><span class="header-section-number">3.1.2.2</span> Step 2: Test the connection<a href="it-infrastructure.html#step-2-test-the-connection" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>You can test the connection with</p>
+<pre><code>ssh -T git@github.com</code></pre>
+<p>It can be that the host cannot be authorized the first time that you try
+to connect. If you want to add Github to the known hosts, you can just
+type yes and the next time you won’t see this warning anymore. Now you
+can clone, push and pull from a repository without having to enter your
+password and username all the time. Note: This only works if you clone a
+repository via ssh and not via https!</p>
+</div>
+</div>
+<div id="ssh-alias" class="section level3 hasAnchor">
+<h3><span class="header-section-number">3.1.3</span> ssh alias<a href="it-infrastructure.html#ssh-alias" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>When using <code>ssh</code>, <code>scp</code> or <code>rsync</code> on Linux to connect to or move files
+always having to type out a user and IP adress can get tiring. There’s a
+couple ways around that but the easiest is provided by the ssh tool
+itself. It is possible to configure an alias that replaces the whole
+user and IP address and can be filled with the autocomplete.</p>
+<p>To accomplish this:</p>
+<ol style="list-style-type: decimal">
+<li><p>find the path where your ssh configuration is located. This should
+be a folder in your user folder called <code>.ssh</code> (When using <code>ls</code> it
+only shows you the some of the folders, use <code>ls -a</code> to find folders
+leading with a dot.)</p></li>
+<li><p>move into the folder (<code>cd ssh</code>) and create a file named config (eg.
+<code>touch config</code>)</p></li>
+<li><p>in the file the configuration is formatted like the following:</p></li>
+</ol>
+<!-- -->
+<pre><code>HOST hostname1
+  SSH_OPTION value
+  SSH_OPTION value
+  
+HOST hostname2
+  SSH_OPTION value
+
+HOST *
+  SSH_OPTION value</code></pre>
+<p>more specific options go to the top, more general ones further down.
+Everything in Hostname * is for all ssh sessions.</p>
+<p>If you were to configure a shortcut for say gaia5 it would look
+something like this:</p>
+<pre><code>Host gaia5
+  User yourusername
+  HostName 132.187.198.19</code></pre>
+<p>4.Write into the file and save it. You should now be able to use your
+shortcut with ssh.</p>
+<p>for further details you can check online, I found this site also
+explains it nicely and in more detail:<br />
+<a href="https://linuxize.com/post/using-the-ssh-config-file/" class="uri">https://linuxize.com/post/using-the-ssh-config-file/</a></p>
+<p>TODO: how to do a key pair</p>
+</div>
+</div>
+<div id="using-hpc-julia" class="section level2 hasAnchor">
+<h2><span class="header-section-number">3.2</span> Using HPC Julia<a href="it-infrastructure.html#using-hpc-julia" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Robin - check over it</p>
+<p><a href="https://doku.hpc.uni-wuerzburg.de/">General information</a> by the Julia support</p>
+<p>The Julia HPC Cluster only coincidentally has the same name as the Julia
+Programming language. You can use it to run your models and also store
+your data on it if you want. Here is how to use it:</p>
+<ol style="list-style-type: decimal">
+<li><p>The first step to using the Julia HPC Cluster is to get an account.
+To do this, go
+<a href="https://www.rz.uni-wuerzburg.de/dienste/rzserver/high-performance-computing/">here</a>.
+Simply go to “Benutzer freischalten” at the very bottom of the page
+and choose “Ecosystem Modeling” from the drop down menu. You should
+soon get an email about your account being created. Now it’s time to
+get started!</p></li>
+<li><p>Depending on your PC’s operating system, you will access the HPC
+differently.</p></li>
+</ol>
+<ul>
+<li><p>on Windows: install PuTTy and WinSCP. WinSCP allows you to transfer
+data between the cluster and your own PC. With PuTTy, you can access
+the HPC and tell it what to do. Connect to both via your JMU-Account
+name like so: name[at]julia.uni-wuerzburg.de and your JMU password.
+In PuTTy, you will need to use linux commands for the cluster. A
+linux tutorial can be found
+<a href="https://github.com/konrad/Introduction_to_the_Unix_Shell_for_biologists/blob/master/Unix_Shell_Handout.md">here</a>.</p></li>
+<li><p>on linux: add how to here</p></li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li><p>You will probably need to install all packages for R and julia that
+the code you want to run uses. You can do this in R very easily.
+Type <code>R</code> and press enter for R to open. Then, give the command
+<code>install.packages("package")</code> as you usually would. The packages
+should install without problem. For julia, you might need to install
+it first. Instructions can be found
+<a href="https://github.com/CCTB-Ecomods/server-setup/blob/master/install_julia.sh">here</a>
+To install the packages, start Julia by typing <code>julia</code> and pressing
+enter. Then, type <code>using Pkg</code> and install your packages as usual
+with <code>Pkg.add("package")</code>.</p></li>
+<li><p>You can use your normal scripts that you also use to run your code
+on your PC. Just double check that there are no absolute path names.
+Remember to save results! To execute your script, you need a bash
+file. A good way to create these files is using Notepad++. Open
+Notepad++ and create a new file (top left). Important: go to Edit,
+Format end of line and choose UNIX. Otherwise, the cluster will not
+be able to read your file. In your bash file, your code will look
+something like this for running an R script:</p></li>
+</ol>
+<div class="sourceCode" id="cb12"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb12-1"><a href="it-infrastructure.html#cb12-1"></a>    <span class="co">#!/bin/bash</span></span>
+<span id="cb12-2"><a href="it-infrastructure.html#cb12-2"></a>    <span class="co">#SBATCH -J #NameOfJob</span></span>
+<span id="cb12-3"><a href="it-infrastructure.html#cb12-3"></a>    <span class="co">#SBATCH -c 2 #this is your number of cores to use </span></span>
+<span id="cb12-4"><a href="it-infrastructure.html#cb12-4"></a>    <span class="co">#SBATCH --mail-type=ALL #if you want to receive emails when your job starts/fails/finishes, very handy</span></span>
+<span id="cb12-5"><a href="it-infrastructure.html#cb12-5"></a>    <span class="co">#SBATCH --mail-user=name\@uni-wuerzburg.de #(mailto:mail-user=name@uni-wuerzburg.de){.email} #(your email address) \</span></span>
+<span id="cb12-6"><a href="it-infrastructure.html#cb12-6"></a>    <span class="co">#SBATCH -p test #(where do you want your job to run?)</span></span>
+<span id="cb12-7"><a href="it-infrastructure.html#cb12-7"></a>    <span class="co">#SBATCH -t 3-00:00:00 #(how much time is allocated at maximum?) </span></span>
+<span id="cb12-8"><a href="it-infrastructure.html#cb12-8"></a>    <span class="co">#SBATCH --mem=100G #(how much memory do you need?) </span></span>
+<span id="cb12-9"><a href="it-infrastructure.html#cb12-9"></a>    <span class="ex">Rscript</span> <span class="st">&quot;Test.R&quot;</span></span></code></pre></div>
+<ol start="5" style="list-style-type: decimal">
+<li>Run your bash script using “sbatch name.sh”. You can use “squeue” to
+check if your code is pending (PD) or running (R). Depending on your
+settings in the bash script, you might get email notifications about
+your job. When it has finished, you can transfer the results from
+the cluster to your PC using WinSCP.</li>
+</ol>
+<p>Happy coding!</p>
+<div id="calculate-you-co2-emission-from-hpc" class="section level3 hasAnchor">
+<h3><span class="header-section-number">3.2.1</span> Calculate you CO2 Emission from HPC<a href="it-infrastructure.html#calculate-you-co2-emission-from-hpc" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Step 1: log into HPC and run the following command</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb13-1"><a href="it-infrastructure.html#cb13-1"></a><span class="ex">sacct</span> --user=<span class="op">&lt;</span>your-user<span class="op">&gt;</span> --starttime=2021-01-01 --format=<span class="st">&#39;CPUTimeRAW&#39;</span> <span class="op">&gt;</span> usage_2021.txt</span></code></pre></div>
+<p>Step 2: Download usage_2021.txt from HPC</p>
+<p>Step 3: Open usage_2021.txt locally and remove the second row wi</p>
+<p>Step 4: Use R to calculate CPU hours</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="it-infrastructure.html#cb14-1"></a>usage &lt;-<span class="st"> </span>readr<span class="op">::</span><span class="kw">read_csv</span>(<span class="st">&quot;usage_2021.txt&quot;</span>)</span>
+<span id="cb14-2"><a href="it-infrastructure.html#cb14-2"></a>dplyr<span class="op">::</span><span class="kw">summarize</span>(usage, <span class="dt">sum_CPU_hours =</span> <span class="kw">sum</span>(CPUTimeRAW)<span class="op">/</span><span class="dv">60</span><span class="op">/</span><span class="dv">60</span>)</span></code></pre></div>
+<p>Step 5: Calculate climate impact</p>
+<p>Go to
+<a href="https://green-algorithms.org/" class="uri">https://green-algorithms.org/</a> Enter the following for HPC: Runtime:
+number calculated above Type of cores: CPU Number of cores: 1 (because
+the hours are CPU hours) Model: Any Memory available: average memory
+that you used (I put 10 GB) Platform: Local server Select correct
+location and put no to all additional questions asked about CPU</p>
+</div>
+</div>
+<div id="using-slurm" class="section level2 hasAnchor">
+<h2><span class="header-section-number">3.3</span> Using slurm<a href="it-infrastructure.html#using-slurm" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Robin<br />
+<a href="https://slurm.schedmd.com/overview.html">SLURM</a> is the resource manager
+running on the gaias and the julia log-in node. It’s job is to
+distribute tasks thorough the run-time among the planets so you and
+others can all use them at the same time. While the julia cluster has a
+resource manager the planets don’t and queue everything directly
+regardless of how often you’ve used it so please be considerate.<br />
+Some of the most common commands are:<br />
+- <code>srun [command]</code> gives the following command directly to SLURM and has
+it output to your current shell. If you get disconnected in the meantime
+you won’t be able to reconnect so be careful - <code>sbatch [batchscript]</code>
+passes a job script to SLURM and puts it in the queue. One of the
+planets will execute all the steps in the job script and puts all the
+output in a <code>.out</code> file as specified in the options. You can also use an
+sbatch script to submit several jobs at the same time -
+<code>scancel [jobid]</code> use this to cancel a running job - <code>squeue</code> show
+currently running jobs - <code>sinfo</code> show current status of the whole
+cluster - <code>sstat [jobid]</code> give stats of a currently running or recently
+finished job<br />
+Here are some of the most useful options for <code>srun</code> and
+<code>sbatch</code>(reminder: you can always check for more options yourself by
+putting in <code>srun --help</code> or search for <em>man srun</em> ):<br />
+- <code>--job-name</code> gives your job a name for <code>squeue</code> and the like -
+<code>--output</code> where to put the output of your batch file. Default is
+<code>slurm-%A_%a.out</code> where <em>%A</em> is the job ID and <em>%a</em> is the array index.
+- <code>-n --ntasks</code> how many tasks you want to have run simultaneously. -
+<code>-t --time</code> Maximum time your job will run. If it runs longer it will be
+killed<br />
+- <code>--mem</code> request this much memory. Default is in MB, add G to request
+GB. If you don’t specify the whole node will be requested.<br />
+- <code>-w --nodelist</code> request a specific node or list of nodes, they will
+<em>all</em> be used<code>-</code>-a
+–array<code>requests a job array   -</code>–mail-type<code>SLURM can send you mails to update you about the status of your jobs. Most common is ALL, check documentation for more.   -</code>–mail-user<code>Set your email here   Here's another summary by the people who make SLURM: https://slurm.schedmd.com/pdfs/summary.pdf   Helpful commands are:    -</code>srun
+-w [node] –mem=[needed memory] –pty
+bash<code>requests to open a bash run time on the specified node. You can either start R or Julia from here or check how much memory or CPU is used with</code>htop`</p>
+</div>
+<div id="using-cctb-server-gaias-and-planets" class="section level2 hasAnchor">
+<h2><span class="header-section-number">3.4</span> Using CCTB Server = gaias and planets<a href="it-infrastructure.html#using-cctb-server-gaias-and-planets" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Here at the CCTB our own servers are the gaias and the planets. While
+the gaias are more powerful than your own PC their main job is to be
+used for smaller tasks and to serve as log-in nodes to get access to the
+more powerful planets. running smaller bits of code on the gaias is no
+problem, but if you have more consider having it run on the planets.</p>
+<div id="opening-an-rstudio-server-on-the-planets" class="section level3 hasAnchor">
+<h3><span class="header-section-number">3.4.1</span> Opening an Rstudio server on the planets<a href="it-infrastructure.html#opening-an-rstudio-server-on-the-planets" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>An Rstudio server works basically the same way as Rstudio on your local
+machine. Only that your code is running somewhere else so you are able
+to access the power of our computational infrastructure.</p>
+<ol style="list-style-type: decimal">
+<li><p>Find the script <code>rstudio-server.sh</code> in internal/scripts and copy it
+to a directory on one of the gaias you are using.</p></li>
+<li><p>From your chosen directory start the SLURM job with the command
+<code>sbatch rstudio-server.sh</code></p></li>
+<li><p>SLURM will tell you your job is running and gives you your job ID.
+Open the log file that was created with your job number (you can use
+something like <code>cat</code> or <code>less</code>) <code>cat rstudio-server.job.[jobID]</code></p></li>
+<li><p>Follow the instructions in the job file. These should be to connect
+via a ssh tunnel (on windows 10 and up you can use powershell, if
+that doesn’t work refer to the ssh section), open your favorite
+browser and point it to <code>localhost:8787</code>where you’ll find a log-in
+screen for your rstudio server. Log-in with the given credentials.</p></li>
+<li><p>When you are done close the server by pressing the off button on the
+top right and cancel the SLURM job by entering <code>scancel -f [jobID]</code><br />
+Some <a href="notes:\" class="uri">notes:\</a></p></li>
+</ol>
+<ul>
+<li>The way the base script works after 8 hours SLURM will send a
+termination signal to the r server which will then save everything
+and next time you open a new session you should again have your
+environment back<br />
+</li>
+<li>If you need more memory or a longer run time you can change it in
+the script header using typical SLURM syntax<br />
+</li>
+<li>See the section on Singularity and containers (in progress) if you
+want to change anything about the container. You will probably have
+to change quite a bit of the script to use a different one than the
+one that’s used</li>
+<li>The way this job script is set up you can’t install new R packages.
+This is so this will work out of the box with no conflicts. You can
+enable access of the R session to other packages by commenting out
+line 31
+<code>export R_LIBS_USER=/usr/local/lib/R/library,/usr/local/lib/R/site-library</code>
+at your own risk.</li>
+<li>The script is based on
+<a href="https://www.rocker-project.org/use/singularity/">Rocker</a></li>
+</ul>
+</div>
+</div>
+<div id="x2go" class="section level2 hasAnchor">
+<h2><span class="header-section-number">3.5</span> X2GO<a href="it-infrastructure.html#x2go" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="basic-tools.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="parts.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/02-it-infrastructure.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
