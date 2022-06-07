@@ -57,6 +57,16 @@ before starting your work are:
 -   if you ever run into any IT-related problems that you cannot solve
     alone, post it in the Mattermost IT channel.
 
+
+We hope that this document helps you to learn more about how to do
+Ecological Modelling and how to navigate life at the CCTB. If you have
+any questions, you can come by our offices or send us an email any time.
+
+We also gladly accept any suggestions on how to improve this guide, so
+let us know if you feel that anything is missing!
+
+
+
 *Juliano*, do you have scripts for these points below that I could link?
 
 Playing with R Codes - Intro R - First Models - Intro Ecological

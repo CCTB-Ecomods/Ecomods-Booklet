@@ -1,0 +1,168 @@
+# Writing & Publishing
+
+## Writing Papers
+
+Here some general tips for structuring and writing the manuscript.
+
+### Structuring the manuscript
+
+-   Find a journal of interest, check the author guidelines and follow
+    the instructions. A list of journals of interest can be found in the
+    internal folder of the github.
+
+-   The manuscript needs to have page and line numbers, double spaced
+    lines
+
+-   Abstract:
+
+    -   Normally abstracts are around 300 words. For a better abstract,
+        structure it in small sections, much like manuscript itself:
+        Introduction, Methods, Results, Discussion and conclusions.
+
+    -   No references in the abstract
+
+-   Introduction:
+
+    -   A ideal introduction has a simple structure without subheaders,
+        but with generally 4-5 paragraphs:  First paragraph: Present
+        the key challenge of the manuscript, general importance of this
+        challenge for science and open questions  Second paragraph:
+        Details on what people has already found out about the main
+        challenge.  Third paragraph: what is the best study system, why
+        and open questions  Fourth paragraph: what is the best tool or
+        method strategy and why. This paragraph may be merged with the
+        third one if study system and tool are too intertwined  Fifth
+        paragraph: Aims, specific study questions and hypotheses,
+        experimental design, expectations. It will help the paper
+        structure if you explicitly list with numbers very specific
+        questions or hypotheses to be addressed by the experiment and
+        analyses.
+
+-   General suggestion: every paragraph must have the first sentence
+    presenting the topic of the paragraph and everything related to it
+    must be in the same paragraph. If the paragraph is in the
+    introduction, the last sentence may be related to an open question
+    that will be targeted in your study. If the paragraph is in the
+    discussion, the last sentence must be a strong concluding sentence
+    with a take-home message based in your findings.
+
+-   Methods must have one general, but small paragraph telling what was
+    the main methodologicla approach. Then the methods must be
+    structured in subsections. Typically, these are:
+
+    -   ‚Study system' or ‚empirical data' if empirical or ‚Model
+        description' is modelling manuscript (with many
+        sub-subsections):  For modeling papers, follow the ODD protocol
+        (Grimm et al. 2010 -
+        <https://www.sciencedirect.com/science/article/abs/pii/S030438001000414X>)
+         It is also useful to document model development, mostly as
+        Appendix, with a TRACE document (Grimm et al. 2014 -
+        <https://www.sciencedirect.com/science/article/abs/pii/S0304380014000611>)
+        o ‚Experimental design': this must explain what experiments were
+        carrying out to answer i) all the questions; ii) particular
+        questions. Normally you have one figure illustrating the
+        scenarios. o ‚Analyses': Start with a general paragraph
+        explaining what model output you used for analyses, whether you
+        did further calculations and manipulations for analyses that are
+        relevant for all study questions. Thereafter, then follow the
+        structure of the hypotheses and create one paragraph for study
+        question and explain what analyses were carried out to answer
+        explicitly each specific study question.
+
+-   Results: Start explaining general overall findings, then structure
+    according to the study questions/hypotheses. Normally you have one
+    Figure for each question.
+
+-   Discussion: This is where you discuss the findings in relation to
+    one another and tot he literature. It is useful to start discussing
+    the results in a section per study quesiton. Then add a section on
+    implications to theory and conservation. Another section to
+    limitations and perspectives. Finally a conclusion.
+
+### Language Tips
+
+-   ‚in order' can be always excluded to save words
+
+-   Avoid synonyms, define terms at first mention, preferentially in the
+    introduction and stick to that term throughout the text! You can add
+    a couple of synonyms early in the introduction to increase
+    findability of the manuscript in search engines when it gets
+    publish. However, for most part of the paper use only one term for a
+    given concept.
+
+-   You need to edit each sentence. This make sentences simple and
+    direct. Prefer only one verb per sentence.
+
+-   You cannot use the conjunction ‚On the other hand," without having
+    used ‚On the one hand,' right before
+
+-   In written English, the sentences should always have a noun!!!
+
+    -   Example: Wrong: „For plants, some traits do this, others do
+        that." Correct: „For plants, some traits do this, other traits
+        do that."
+
+-   In this regard, in any given sentence, there should be only one
+    subject to avoid confusion with the verbs.
+
+    -   Example: Wrong: „Plants have traits and some do this." (some
+        plants or some traits?) Correct: „Plants have traits. Some
+        traits do this."
+
+## Rebuttal Letters
+
+## Reviewing Papers
+
+A template of a review feedback letter:
+
+Comments to MS-ID
+
+For editor [This section should be cut and pasted onto the part of the
+review form online that is confidential to the editor, i.e. not visible
+to the authors, and should NOT be retained in this file if you decide to
+upload the comments as a file.]:
+
+[here you talk in brief your general opinion on the paper and justify
+your recommendation, while mentioning in the aspects, like statistics,
+that you cannot comment with much confidence. Stress what you think from
+all your concerns listed below, which are the most critical, those that
+the authors MUST clarify]
+
+For authors [From this section to the end of the file you can upload to
+the online review form, normally only necessary when the comments are
+too extensive.]:
+
+[Here you explain in 1-3 sentences what the paper does and finds
+(important for the editor). Explain your general assessment on the
+language and style. Whether the authors can substantiate their claims,
+whether you see potential in the manuscript, that you may have concerns
+and what is your general recommendation. Key recommendations are: reject
+(even if the authors tackle the issues, the manuscript might not fit the
+scope of the journal, or would remain too trivial and non-original);
+reject and invite for resubmission (the manuscript has a potential for a
+good contribution to the field if the major points are correctly
+addressed, particularly if major points involve re-doing analyses, which
+mean potentially changed content after revision); major revision (when
+there are major points, but the authors just need to do some re-writing
+and/or re-analysing); minor revision (when there is no major point, just
+minor corrections); accept (everything is at contempt). Be always polite
+and encouraging.]
+
+Major points:
+
+[Here you list the points that you find critical, which may implicit
+mean the authors will need to 1) rewrite; 2) re-analyse; 3) re-do
+experiments. Critical points: big flaws in the rationale; non-adequate
+experiment or analyses; wrong conclusions; missing analyses; missing key
+literature; poor structure. These points can be general and not
+necessarily addressed to a particular line or sentence. Be always polite
+and encouraging; if you have any critic, you must provide a solution or
+a suggestion. Do not criticize just for the sake of it.]
+
+Minor points:
+
+[These are points that you can locate specifically to a line, sentence,
+paragraph, table or figure. Normally these are unclear statements,
+typos, errors, missing information, poor design, formatting issues.
+These can be normally quickly solved.]
+

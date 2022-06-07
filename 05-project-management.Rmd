@@ -1,0 +1,48 @@
+# Project management
+
+Apart from all the programming you are going to learn, it might also
+make sense for you to learn how to structure your work day/week and your
+whole project so that you never lose track of what you need to do, and
+what you already have done, and how to do it all efficiently.
+
+## Excel-based orga
+
+[Anne](https://www.biozentrum.uni-wuerzburg.de/cctb/research/ecosystem-modeling/people/anne-lewerentz/)
+has a very nice Excel sheet that she uses as a calendar. It has an
+annual sheet, a weekly schedule, and more. What is nice about this is
+that it is not restricted to Outlook has multiple options for sorting,
+filtering, coloring, and is completely customizable. Her template is
+available upon request :)
+
+## Pomodoro timer
+
+"The Pomodoro Technique is a time management method developed by
+Francesco Cirillo in the late 1980s. It uses a timer to break work into
+intervals, traditionally 25 minutes in length, separated by short
+breaks. Each interval is known as a pomodoro, from the Italian word for
+'tomato', after the tomato-shaped kitchen timer Cirillo used as a
+university student." (From wikipedia)
+
+Using the Pomodoro technique can be helpful if you struggle with feeling
+overwhelmed by your workload. Just start with any task and work on it
+for the set time (usually 25 minutes), then take a (5 minute) break. You
+will be surprised by how much you can get done in just one Pomodoro
+session!
+
+You can either set your phone alarm at your chosen intervals, or you can
+look up one of the many Youtube channels that provide you with some
+background white noise during work periods, and music during the breaks.
+[Jana](https://www.biozentrum.uni-wuerzburg.de/cctb/research/ecosystem-modeling/people/jana-blechschmidt/)
+likes to listen to this [ambience
+channel](https://www.youtube.com/c/PeacefulAmbience), for example.
+
+## Asana
+
+Basically just on online kanban board. + Its has unlimited projects and
+a nice look - proprietary and web based.
+
+## Finishing a PhD 
+
+Anne collected (with Selina, FU Berlin) all there strategies that helped
+them to finish their thesis:
+[Tips&Strategies](https://docs.google.com/spreadsheets/d/1A_tDiVdG4E-zXpFXDHKXBJr95RCt3S41GH64gicyOXM/edit?usp=sharing)

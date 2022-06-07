@@ -1,0 +1,101 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+# Process-based models
+
+## Best Modeling and Programming practices
+
+There are some practices in modelling and programming that make the job
+a lot easier. Our former colleague,
+[Daniel](https://www.ufz.de/index.php?en=48991), has put together some
+thoughts on what to keep in mind:
+
+1.  Use relative paths
+
+2.  Document your code and how to use it Using Github/Gitlab. Gitlab is
+    self-hosted (Biology). Zenodo is citable, trusted third-party.
+
+    1.  User Manual
+
+    2.  DeveloperManual
+
+3.  Script (automatize) experimental steps (i.e. pipeline)
+
+    1.  Analyses in a single R script
+
+4.  Use version control
+
+    1.  Use commit identifier to refer to a particular code version for
+        a experiment
+
+    2.  Use seeds for replicate (must be robust for changes in OS)
+
+    3.  Map and config file as output (for seed for exmaple) Data
+        longevity & accessibility: Use storage folder in gaias. Physical
+        backup, repository of very large data. Container for codes that
+        require dependencies and particular versions.
+
+## Blog post series on software development
+
+Daniel also has a nice blog post series if you want to read more.
+
+1.  [Principles of Software
+    Development](https://terranostra.one/posts/Principles-of-Software-Development.html)
+
+2.  [Understandable
+    Software](https://terranostra.one/posts/Understandable-Software.html)
+
+3.  [The Art of
+    Abstraction](https://terranostra.one/posts/The-Art-of-Abstraction.html)
+
+4.  [Dealing with
+    Errors](https://terranostra.one/posts/Dealing-with-Errors.html)
+
+5.  [Programming Tools:
+    Languages](https://terranostra.one/posts/Programming-tools-languages.html)
+
+6.  [Programming Tools:
+    Paradigms](https://terranostra.one/posts/Programming-tools-paradigms.html)
+
+7.  [Developing in a
+    Team](https://terranostra.one/posts/Developing-in-a-team.html)
+
+8.  [Final
+    Thoughts](https://terranostra.one/posts/Some-final-thoughts-on-programming.html)
+
+See also: Vedder, Ankenbrand & Cabral (2021) "Dealing with Software
+Complexity in Individual-based Models", Methods in Ecology and Evolution
+(<https://doi.org/10.1111/2041-210X.13716>)
+
+## EcoMods models
+
+Here, you will find all of our working group's models. For specific
+questions for each model, please refer to the respective lab member.
+
+### GeMM
+
+### MGM
+
+MGM (Macrophyte Growth Model) is a process-based, eco-physiological
+model simulating the growth of submerged macrophytes under different
+environmental conditions. MGM is a simplified re-implementation of
+Charisma 2.0 [@vannes2003] in Julia language.
+
+![Model phylogeny of MGM (a) and simplified model scheme
+(b).](booklet_pictures/MGM.png){#mgm}
+
+Documentation and code is open access on
+[GitHub](https://github.com/AnneLew/MGM).
+
+Further questions: ask Anne
+
+### metaRange
+
+general info
+
+#### R version
+
+#### Julia Version

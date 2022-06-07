@@ -1,0 +1,169 @@
+# Computational methods
+
+Now, let's come to the more practical part of our Beginner's Guide.
+Here, you will get an overview on the methods that we use in our working
+group.
+
+## Sensitivity Analyses
+
+Anne
+
+### Overview
+
+General broad overview in **Sensitivity Analysis in Practice : A Guide
+to Assessing Scientific Models** [@saltelli2002]
+
+Comparison of different sensitivity analysis methods: A performance
+comparison of sensitivity analysis methods for building energy models
+Idea: Run the sensitivity analysis not on the data itself but on a
+comparison between data and model (as you would use in the validation)
+-\> This is the measure to which you want to know the sensitivity
+
+### Local
+
+= One-factor-at-a-time (OAT)
+
+### Global
+
+Morris screening and enhancement as used in the R package sensitivity
+(Campolongo et al.):
+[<https://doi.org/10.1016/j.envsoft.2006.10.004>](https://doi.org/10.1016/j.envsoft.2006.10.004){.uri}
+[@campolongo2007]
+
+## Virtual ecologist
+
+## Forward simulations
+
+## Basic Phylogenetic analyses
+
+Robin
+
+## Parameter optimization
+
+### Direct methods
+
+Differential evolution optimization Differential Evolution with DEoptim
+(R package) How does differential evolution work?
+
+### Bayesian Calibration
+
+florianhartig/LearningBayes: An introduction to Bayesian statistics
+Bayesian Tools - General-Purpose MCMC and SMC Samplers and Tools for
+Bayesian Statistics Inverse modeling
+<https://arxiv.org/ftp/arxiv/papers/2007/2007.15580.pdf> \#\#\#
+Emulatoren Approximieren das Modell selbst "modelling a model" /
+"meta-model"
+
+### Neural networks 
+
+<https://arxiv.org/ftp/arxiv/papers/2007/2007.15580.pdf>
+<https://link.springer.com/chapter/10.1007%2F978-3-030-44584-3_43>
+<https://royalsocietypublishing.org/doi/10.1098/rsbl.2017.0660> \#\#\#\#
+Bayesian <https://bg.copernicus.org/articles/15/5801/2018/>
+
+### Tips and Tricks
+
+For all methods, first, run an optimization on a dataset that you
+produced with the model. That way, you can find out whether the
+optimization algorithm can find the parameters with which you modelled
+the dataset. This can help to verify that your optimization method
+works.
+
+## Machine Learning
+
+If you are interested in machine learning,
+[here](https://theoreticalecology.github.io/machinelearning/index.html)
+is a course by our colleague Florian Hartig from the University of
+Regensburg. This course is held in R.
+
+## Phylogenetic Analyses
+
+## Functional Analyses
+
+Wright et al (2005) provides a good basis for 'trusting' trait-trait
+associations above 5-fold variation and/or n=20 spp, within a study.
+Although Wright et al. show trait correlations with as few as 4 species.
+
+Wright, Ian J., et al. Assessing the generality of global leaf trait
+relationships. New phytologist 166,(2005): 485-496.
+
+For multivariate analyses: i) MANOVA (because traits are not independent
+from one another) and canonical discriminant analyses (CDA) =Y check R
+package candisc ii) trait network analyses (R package igraph - Csardi
+and Nepusz, 2006) + Mantel test for comparing trait correlations across
+groups (e.g. taxonomic, trophic or guild groups) iii) PCA (useful for
+visualization as well)
+
+## SDMs
+
+Tutorials:
+
+Damaris Zurell: <https://damariszurell.github.io/SDM-Intro/>
+
+Babak Naimi: <https://www.youtube.com/watch?v=83dMS3bcjJM>
+
+             https://www.biogeoinformatics.org/
+             
+
+Daniel Griffith:
+<https://griffithdan.github.io/pages/outreach/SDM-Workshop-OSU-FALL2017.pdf>
+
+Further:
+
+ModestR Software: <http://www.ipez.es/ModestR/>
+
+ModestR Tutorial:
+<https://www.slideshare.net/modestrsoftware/21-creating-virtual-species-and-calculating-simple-ensemble-models-with-r-that-can-be-later-used-with-version-modestr-56-or-higher>
+
+Earlier models:
+
+BIOCLIM: <https://doi.org/10.1111/ddi.12144>
+
+Packages:
+
+sdm: <https://cran.r-project.org/web/packages/sdm/sdm.pdf>
+
+kuenm: <https://peerj.com/articles/6281/>
+
+virtualspecies: <https://doi.org/10.1111/ecog.01388>
+
+               https://cran.r-project.org/web/packages/virtualspecies/virtualspecies.pdf
+               
+
+For Maxent type of models:
+
+Evaluating Maxent niche models with ENMeval:
+<https://doi.org/10.1111/2041-210X.12261>
+
+For ensemble models:
+
+Biomod Paper: <https://doi.org/10.1111/j.1600-0587.2008.05742.x>
+
+Biomod2 package:
+
+<https://cran.r-project.org/web/packages/biomod2/biomod2.pdf>
+
+<https://github.com/biomodhub/biomod2>
+
+ESDM: <https://doi.org/10.1111/2041-210X.13283>
+
+Stacked SDMs (for species richness/diversity):
+
+SSDM: <https://cran.r-project.org/web/packages/SSDM/vignettes/SSDM.html>
+
+Joint-SDMs for co-occurrence data:
+
+with HMSC: <https://doi.org/10.1111/2041-210X.13345>
+
+sjSDM: <https://doi.org/10.1111/2041-210X.13687>
+
+       https://github.com/TheoreticalEcology/s-jSDM
+
+Useful literature:
+
+<https://doi.org/10.1111/ddi.12892>
+
+ODMAP: A tandard protocol for reporting SDMs:
+<https://doi.org/10.1111/ecog.04960>
+
+Correcting sampling bias in MAxent: <https://doi.org/10.1111/ddi.12096>
