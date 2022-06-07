@@ -1,0 +1,287 @@
+# Basic tools
+
+The most commonly used programming languages in our lab are R and Julia.
+They are both great languages for biology-related programming and
+statistical analysis.
+
+If you already know how to program and are looking for a challenge, our
+lab members enjoy participating in [Advent of
+Code](https://adventofcode.com/). It forces you to think outside the box
+and will teach you some new tricks!
+
+## Programming in general
+
+If you have never programmed before, ....
+
+crash course
+
+## R
+
+[R](https://www.r-project.org/) is very well-established and probably
+has the most support from all the languages we use. Most of the time,
+you can copy-paste your error message from R into Google, and you will
+find several solutions for your problem. A very helpful website is
+[Stack Overflow](https://stackoverflow.com/).
+
+### Interface
+
+In our lab, most people use [RStudio](https://www.rstudio.com/) when
+they are working in R. RStudio allows you to very easily write and
+execute your scripts, create plots and keep an eye on your environment.
+It also includes a helpful debugging mode. Other, not as commonly used
+GUIs are [RKWard](https://rkward.kde.org/),
+[BlueSky](https://www.blueskystatistics.com/Default.asp) and [R
+Commander](https://socialsciences.mcmaster.ca/jfox/Misc/Rcmdr/).
+
+### Resources
+
+To get started, there are several books on how to use R.
+
+[R for Data Science](https://r4ds.had.co.nz/): "You'll learn how to get
+your data into R, get it into the most useful structure, transform it,
+visualise it and model it."
+
+[Advanced R](https://adv-r.hadley.nz/): "The book is designed primarily
+for R users who want to improve their programming skills and
+understanding of the language. It should also be useful for programmers
+coming to R from other languages, as help you to understand why R works
+the way it does."
+
+Further reading:
+
+-   Coding Etiquette (in R) - slides from *Anne* prepared for BioInfo F2
+    2020 (Where to store?)
+
+-   Troubleshooting in R - Slides from *Anne* prepared for BioInfo F2
+    2020
+
+-   R for Dummies, Andrie de Vries & Joris Meys, 2015 (PDF available,
+    ask Jana)
+
+### Packages
+
+What are [R packages](https://r-pkgs.org/)?
+
+If you have a problem that you need a certain function to solve, many
+times you do not need to write that function from scratch yourself.
+Usually, another (more skilled) person has already written some code
+that solves this problem. These "packages of code" can be uploaded to
+CRAN (the Comprehensive R Archive Network) and then downloaded to be
+used by other users.
+
+An example: You have a nice plot and want to ensure it is easy to read
+and interpret for colorblind people. Now you could set all of your 200
+colors by hand so that it is not the default red-green nightmare, but it
+is much easier to just download a package called "viridis" that contains
+multiple color palettes that are optimized for this very use. Then, all
+you need to do is tell R to use the viridis palette instead of setting
+all colors by hand, which would get very tedious. Installing and loading
+a package via CRAN:
+
+    install.packages("PackageName")
+    library(PackageName)
+
+Note that packages need to be loaded into your environment using the
+`library()` command in order for R to use them. You can also download
+packages that are not yet on CRAN using
+[devtools](https://www.r-project.org/nosvn/pandoc/devtools.html).
+
+Commonly used packages in our working group include (but are not limited
+to):
+
+-   [tidyverse](https://www.tidyverse.org/)
+
+-   [here](https://here.r-lib.org/)
+
+-   [devtools](https://www.r-project.org/nosvn/pandoc/devtools.html)
+
+-   [ggplot2](https://ggplot2.tidyverse.org/)
+
+-   [viridis](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html)
+
+-   [raster](https://cran.r-project.org/web/packages/raster/index.html)
+
+-   [rgdal](https://cran.r-project.org/web/packages/rgdal/index.html)
+
+### Rmd
+
+R Markdown is a great way to create documents in HTML, Word or PDF
+format. Rmds can include chunks of code which create the tables and
+plots of the document. This way, you don't have to update your document
+parallel to your code, as you keep both your code to create your plots
+and said plots in the file. This file was also created using Rmd!
+
+[Best overall guide](https://bookdown.org/yihui/rmarkdown/)
+
+A future alternative might be [quarto](https://quarto.org/).
+
+Resources from course SystemAdmin 2020, prepared by *Anne*. Where to
+store?
+
+## Julia, the language
+
+[Julia](https://julialang.org/) is a relatively new programming language
+with a significantly higher performance than R. For complex models that
+take a lot of time to run in R, it might make sense to transfer them to
+Julia. While it has many advantages, it is not as well-known as R, so
+you may need to search for an explanation for your error message a bit
+longer. Julia has its own [Discourse](https://discourse.julialang.org/)
+page with many helpful entries and tutorials as well.
+
+The Julia [Documentation](https://docs.julialang.org/en/v1/) is also
+VERY good.
+
+To quickly look up Julia syntax, you can use this [Cheat
+Sheet](https://juliadocs.github.io/Julia-Cheat-Sheet/).
+
+### Best tutorials
+
+To get started,
+[here](https://benlauwens.github.io/ThinkJulia.jl/latest/book.html) is a
+very nice book for beginners by Ben Lauwens and Allen Downey that
+explains not only the Julia language, but also introduces the concept of
+programming in general.
+
+[JuliaAcademy](https://juliaacademy.com/courses) offers an introductory
+course that is tried and liked by Robin.
+
+If you are not that into reading, the official Julia Programming
+Language [Youtube
+channel](https://www.youtube.com/channel/UC9IuUwwE2xdjQUT_LMLONoA) has
+some very nice tutorials structured by playlists. One especially helpful
+playlist is [Julia Programming for Nervous
+Beginners](https://www.youtube.com/watch?v=ub3tqCWZmo4&list=PLP8iPy9hna6Qpx0MgGyElJ5qFlaIXYf1R).
+They also hold the annual [JuliaCon](https://juliacon.org/2022/) online
+and upload the speaker's talks to Youtube if you cannot be there live.
+
+### Plotting in Julia
+
+Plots in Julia can be a bit more tricky than in R (but that might be
+because we are used to plotting in R - don't let this discourage you
+from plotting your heart out in Julia if that is what you want to do!).
+Here are some packages that may help facilitate your plotting
+adventures:
+
+-   [This](https://juliapackages.com/c/graphical-plotting) page shows a
+    list of graphical plotting packages
+
+-   [GLMakie](https://makie.juliaplots.org/stable/) is used by *Robin*
+
+### Interface
+
+As for R, you can choose from a variety of interfaces for Julia. In our
+working group, these are the most common ones:
+
+-   [Atom and Juno](https://junolab.org/) for julia.
+    [Here](https://techytok.com/atom-and-juno-setup-for-julia/) is a
+    nice tutorial on how to set it up. However, even though popular in
+    our lab, Juno will receive no more feature updates as of March 2022,
+    so if you are new to Julia, it might be best to choose a different
+    IDE.
+
+-   [VSCode](https://www.julia-vscode.org/) is the successor of Juno. It
+    works in a similar way and is also used by some members of our lab
+    and is at this point the recommended option to use.
+
+-   if you are interested in using a Computational Notebook (see section
+    below), [Jupyter](https://jupyter.org/) might be a good fit for you.
+    Learn how to use Jupyter and Julia together
+    [here](https://datatofish.com/add-julia-to-jupyter/). This is still
+    a bit buggy, though.
+
+## Git
+
+Git is a great software that allows you to keep track of the changes you
+make in your code (version control). This way, you will not need to keep
+several files named "Code_02_revised" and "Code_02_revised_changed" etc,
+which can quickly get confusing. There are different servers that you
+can store your repositories on, the most common ones being
+[GitHub](https://github.com/) and [GitLab](https://about.gitlab.com/).
+You can install git on your PC and use it via the commandline, or you
+can use it with the help of a UI, like [GitHub
+Desktop](https://desktop.github.com/). This is a very helpful [Training
+and Tutorial](https://github.com/UnseenWizzard/git_training) that
+explains what git is and how to use it very nicely.
+
+## Computational Notebooks
+
+These are files that allow you to write descriptive text, code, and the
+output of that code. They are particularly useful for:
+
+-   learning and teaching coding, because the code and its output are
+    shown together, so you always know what does what
+-   documenting analysis/model development, because, besides the outputs
+    of the code you are trying out, descriptive text can help elaborate
+    your ideas better, and even include figures or links in the same
+    file as the code you are working on.
+-   sharing computational work: Your collaborator/supervisor will be
+    able to follow your reasoning with the descriptive text and check
+    your work in the code blocks and its outputs.
+
+See the complete tutorial
+[here](https://github.com/FellowsFreiesWissen/computational_notebooks).
+
+## Bash commands
+
+When we let our models run, they tend to need a lot of computational
+power. Running experiments on your laptop can take days, weeks or even
+months. Therefore, we can send our scripts to more powerful machines
+from the University infrastructure. To tell the computer "execute script
+XXX" you need to write a short shell using bash.
+
+A nice tool to use for bash scripts is
+[shellcheck](https://github.com/koalaman/shellcheck) - Robin
+
+For an example bash script see section IT infrastructure - Using HPC
+Julia
+
+## latex
+
+Latex is a software to write text. You can find thousands of tutorials
+online. If you want to work with latex on shared documents, consider
+[overleaf](https://de.overleaf.com/).
+
+## Advanced
+
+### Singularity
+
+<https://sylabs.io/guides/3.5/user-guide/quick_start.html>
+
+Singularity is a way to use containers, small virtual machines that use
+the resources of the computer they run on but have their own
+environment. This will only be a short explanation on how to use them
+otherwise refer to the official documentation.
+
+Before a container can be used it first has to be built. This can be
+done by either using a `.def` file (Only if you have sudo rights on the
+local machine and under Linux so use Linux or WSL) or you can get it on
+the base of an existing container in the Singularity library or from
+docker. Prebuilt containers on the gaias are stored in
+`/storage/singularity_images`. `ecomodsdm.sif` is a container based on
+`docker://rocker/geospatial`
+
+The main ways to use Singularity containers are with the commands:\
+- - `singularity shell [container.sif]` opens a shell in the provided
+container - `singularity exec [container.sif]` This executes a
+predefined command as defined in the definition file -
+`singularity exec [container.sif] [command]` This only executes the
+requested command e.g. opens R or executes a program\
+By default `/home/$USER` is bound into the container at execution. If
+more folders need to be bound into it do this with the
+`--bind [local]:[container]` option
+
+### EMACS, Vim, and Spacemacs
+
+????
+
+### Regex
+
+*Robin*
+
+A handy website that goes through the basics of Regular Expression
+grammar:\
+<https://ryanstutorials.net/regular-expressions-tutorial>
+
+<https://regex101.com/>
+
+## Backup and Storage of Data and Code
