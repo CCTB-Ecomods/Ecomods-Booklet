@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 Programming tools | EcoMods Booklet</title>
+  <meta name="description" content="This is HowTo of the CCTB Würzburg EcoMods members." />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 Programming tools | EcoMods Booklet" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="This is HowTo of the CCTB Würzburg EcoMods members." />
+  <meta name="github-repo" content="CCTB-Ecomods/Ecomods-Booklet" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Programming tools | EcoMods Booklet" />
+  
+  <meta name="twitter:description" content="This is HowTo of the CCTB Würzburg EcoMods members." />
+  
+
+<meta name="author" content="The EcoMods, Würzburg" />
+
+
+<meta name="date" content="2022-06-07" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="it-infrastructure.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Hello and welcome to the EcoMods working group!</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#missing-sections-todos"><i class="fa fa-check"></i><b>1.1</b> Missing sections &amp; todos</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="programming-tools.html"><a href="programming-tools.html"><i class="fa fa-check"></i><b>2</b> Programming tools</a><ul>
+<li class="chapter" data-level="2.1" data-path="programming-tools.html"><a href="programming-tools.html#basic-tools-and-languages"><i class="fa fa-check"></i><b>2.1</b> Basic tools and languages</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="programming-tools.html"><a href="programming-tools.html#r"><i class="fa fa-check"></i><b>2.1.1</b> R</a></li>
+<li class="chapter" data-level="2.1.2" data-path="programming-tools.html"><a href="programming-tools.html#julia-the-language"><i class="fa fa-check"></i><b>2.1.2</b> Julia, the language</a></li>
+<li class="chapter" data-level="2.1.3" data-path="programming-tools.html"><a href="programming-tools.html#version-control"><i class="fa fa-check"></i><b>2.1.3</b> Version control</a></li>
+<li class="chapter" data-level="2.1.4" data-path="programming-tools.html"><a href="programming-tools.html#bash-commands"><i class="fa fa-check"></i><b>2.1.4</b> Bash commands</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="programming-tools.html"><a href="programming-tools.html#advanced-tools"><i class="fa fa-check"></i><b>2.2</b> Advanced tools</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="programming-tools.html"><a href="programming-tools.html#singularity"><i class="fa fa-check"></i><b>2.2.1</b> Singularity</a></li>
+<li class="chapter" data-level="2.2.2" data-path="programming-tools.html"><a href="programming-tools.html#emacs-vim-and-spacemacs"><i class="fa fa-check"></i><b>2.2.2</b> EMACS, Vim, and Spacemacs</a></li>
+<li class="chapter" data-level="2.2.3" data-path="programming-tools.html"><a href="programming-tools.html#regex"><i class="fa fa-check"></i><b>2.2.3</b> Regex</a></li>
+<li class="chapter" data-level="2.2.4" data-path="programming-tools.html"><a href="programming-tools.html#backup-and-storage-of-data-and-code"><i class="fa fa-check"></i><b>2.2.4</b> Backup and Storage of Data and Code</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="programming-tools.html"><a href="programming-tools.html#best-practices"><i class="fa fa-check"></i><b>2.3</b> Best practices</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="programming-tools.html"><a href="programming-tools.html#best-modeling-and-programming-practices"><i class="fa fa-check"></i><b>2.3.1</b> Best Modeling and Programming practices</a></li>
+<li class="chapter" data-level="2.3.2" data-path="programming-tools.html"><a href="programming-tools.html#blog-post-series-on-software-development"><i class="fa fa-check"></i><b>2.3.2</b> Blog post series on software development</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="it-infrastructure.html"><a href="it-infrastructure.html"><i class="fa fa-check"></i><b>3</b> IT infrastructure</a><ul>
+<li class="chapter" data-level="3.1" data-path="it-infrastructure.html"><a href="it-infrastructure.html#ssh"><i class="fa fa-check"></i><b>3.1</b> SSH</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="it-infrastructure.html"><a href="it-infrastructure.html#connect-with-ssh"><i class="fa fa-check"></i><b>3.1.1</b> Connect with SSH</a></li>
+<li class="chapter" data-level="3.1.2" data-path="it-infrastructure.html"><a href="it-infrastructure.html#using-ssh-to-authenticate-your-github-account-todo-move-to-github-section"><i class="fa fa-check"></i><b>3.1.2</b> Using SSH to authenticate your Github account TODO: move to Github section</a></li>
+<li class="chapter" data-level="3.1.3" data-path="it-infrastructure.html"><a href="it-infrastructure.html#ssh-alias"><i class="fa fa-check"></i><b>3.1.3</b> ssh alias</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="it-infrastructure.html"><a href="it-infrastructure.html#using-hpc-julia"><i class="fa fa-check"></i><b>3.2</b> Using HPC Julia</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="it-infrastructure.html"><a href="it-infrastructure.html#calculate-you-co2-emission-from-hpc"><i class="fa fa-check"></i><b>3.2.1</b> Calculate you CO2 Emission from HPC</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="it-infrastructure.html"><a href="it-infrastructure.html#using-slurm"><i class="fa fa-check"></i><b>3.3</b> Using slurm</a></li>
+<li class="chapter" data-level="3.4" data-path="it-infrastructure.html"><a href="it-infrastructure.html#using-cctb-server-gaias-and-planets"><i class="fa fa-check"></i><b>3.4</b> Using CCTB Server = gaias and planets</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="it-infrastructure.html"><a href="it-infrastructure.html#opening-an-rstudio-server-on-the-planets"><i class="fa fa-check"></i><b>3.4.1</b> Opening an Rstudio server on the planets</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="it-infrastructure.html"><a href="it-infrastructure.html#x2go"><i class="fa fa-check"></i><b>3.5</b> X2GO</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="process-based-models.html"><a href="process-based-models.html"><i class="fa fa-check"></i><b>4</b> Process-based models</a><ul>
+<li class="chapter" data-level="4.1" data-path="process-based-models.html"><a href="process-based-models.html#some-general-ressources"><i class="fa fa-check"></i><b>4.1</b> Some general ressources?</a></li>
+<li class="chapter" data-level="4.2" data-path="process-based-models.html"><a href="process-based-models.html#ecomods-models"><i class="fa fa-check"></i><b>4.2</b> EcoMods models</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="process-based-models.html"><a href="process-based-models.html#gemm"><i class="fa fa-check"></i><b>4.2.1</b> GeMM</a></li>
+<li class="chapter" data-level="4.2.2" data-path="process-based-models.html"><a href="process-based-models.html#mgm"><i class="fa fa-check"></i><b>4.2.2</b> MGM</a></li>
+<li class="chapter" data-level="4.2.3" data-path="process-based-models.html"><a href="process-based-models.html#metarange"><i class="fa fa-check"></i><b>4.2.3</b> metaRange</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="computational-methods.html"><a href="computational-methods.html"><i class="fa fa-check"></i><b>5</b> Computational methods</a><ul>
+<li class="chapter" data-level="5.1" data-path="computational-methods.html"><a href="computational-methods.html#sensitivity-analyses"><i class="fa fa-check"></i><b>5.1</b> Sensitivity Analyses</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="computational-methods.html"><a href="computational-methods.html#overview"><i class="fa fa-check"></i><b>5.1.1</b> Overview</a></li>
+<li class="chapter" data-level="5.1.2" data-path="computational-methods.html"><a href="computational-methods.html#local"><i class="fa fa-check"></i><b>5.1.2</b> Local</a></li>
+<li class="chapter" data-level="5.1.3" data-path="computational-methods.html"><a href="computational-methods.html#global"><i class="fa fa-check"></i><b>5.1.3</b> Global</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="computational-methods.html"><a href="computational-methods.html#virtual-ecologist"><i class="fa fa-check"></i><b>5.2</b> Virtual ecologist</a></li>
+<li class="chapter" data-level="5.3" data-path="computational-methods.html"><a href="computational-methods.html#parameter-optimization"><i class="fa fa-check"></i><b>5.3</b> Parameter optimization</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="computational-methods.html"><a href="computational-methods.html#direct-methods"><i class="fa fa-check"></i><b>5.3.1</b> Direct methods</a></li>
+<li class="chapter" data-level="5.3.2" data-path="computational-methods.html"><a href="computational-methods.html#bayesian-calibration"><i class="fa fa-check"></i><b>5.3.2</b> Bayesian Calibration</a></li>
+<li class="chapter" data-level="5.3.3" data-path="computational-methods.html"><a href="computational-methods.html#neural-networks"><i class="fa fa-check"></i><b>5.3.3</b> Neural networks</a></li>
+<li class="chapter" data-level="5.3.4" data-path="computational-methods.html"><a href="computational-methods.html#tips-and-tricks"><i class="fa fa-check"></i><b>5.3.4</b> Tips and Tricks</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="computational-methods.html"><a href="computational-methods.html#machine-learning"><i class="fa fa-check"></i><b>5.4</b> Machine Learning</a></li>
+<li class="chapter" data-level="5.5" data-path="computational-methods.html"><a href="computational-methods.html#phylogenetic-analyses"><i class="fa fa-check"></i><b>5.5</b> Phylogenetic Analyses</a></li>
+<li class="chapter" data-level="5.6" data-path="computational-methods.html"><a href="computational-methods.html#functional-analyses"><i class="fa fa-check"></i><b>5.6</b> Functional Analyses</a></li>
+<li class="chapter" data-level="5.7" data-path="computational-methods.html"><a href="computational-methods.html#sdms"><i class="fa fa-check"></i><b>5.7</b> SDMs</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="project-management.html"><a href="project-management.html"><i class="fa fa-check"></i><b>6</b> Project management</a><ul>
+<li class="chapter" data-level="6.1" data-path="project-management.html"><a href="project-management.html#computational-notebooks"><i class="fa fa-check"></i><b>6.1</b> Computational Notebooks</a></li>
+<li class="chapter" data-level="6.2" data-path="project-management.html"><a href="project-management.html#excel-based-orga"><i class="fa fa-check"></i><b>6.2</b> Excel-based orga</a></li>
+<li class="chapter" data-level="6.3" data-path="project-management.html"><a href="project-management.html#pomodoro-timer"><i class="fa fa-check"></i><b>6.3</b> Pomodoro timer</a></li>
+<li class="chapter" data-level="6.4" data-path="project-management.html"><a href="project-management.html#asana"><i class="fa fa-check"></i><b>6.4</b> Asana</a></li>
+<li class="chapter" data-level="6.5" data-path="project-management.html"><a href="project-management.html#finishing-a-phd"><i class="fa fa-check"></i><b>6.5</b> Finishing a PhD</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="writing-publishing.html"><a href="writing-publishing.html"><i class="fa fa-check"></i><b>7</b> Writing &amp; Publishing</a><ul>
+<li class="chapter" data-level="7.1" data-path="writing-publishing.html"><a href="writing-publishing.html#tools"><i class="fa fa-check"></i><b>7.1</b> Tools</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="writing-publishing.html"><a href="writing-publishing.html#latex"><i class="fa fa-check"></i><b>7.1.1</b> latex</a></li>
+<li class="chapter" data-level="7.1.2" data-path="writing-publishing.html"><a href="writing-publishing.html#others"><i class="fa fa-check"></i><b>7.1.2</b> Others</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="writing-publishing.html"><a href="writing-publishing.html#writing-papers"><i class="fa fa-check"></i><b>7.2</b> Writing Papers</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="writing-publishing.html"><a href="writing-publishing.html#structuring-the-manuscript"><i class="fa fa-check"></i><b>7.2.1</b> Structuring the manuscript</a></li>
+<li class="chapter" data-level="7.2.2" data-path="writing-publishing.html"><a href="writing-publishing.html#language-tips"><i class="fa fa-check"></i><b>7.2.2</b> Language Tips</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="writing-publishing.html"><a href="writing-publishing.html#rebuttal-letters"><i class="fa fa-check"></i><b>7.3</b> Rebuttal Letters</a></li>
+<li class="chapter" data-level="7.4" data-path="writing-publishing.html"><a href="writing-publishing.html#reviewing-papers"><i class="fa fa-check"></i><b>7.4</b> Reviewing Papers</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">EcoMods Booklet</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="programming-tools" class="section level1 hasAnchor">
+<h1><span class="header-section-number">Chapter 2</span> Programming tools<a href="programming-tools.html#programming-tools" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="basic-tools-and-languages" class="section level2 hasAnchor">
+<h2><span class="header-section-number">2.1</span> Basic tools and languages<a href="programming-tools.html#basic-tools-and-languages" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The most commonly used programming languages in our lab are R and Julia.
+They are both great languages for biology-related programming and
+statistical analysis.</p>
+<p>If you already know how to program and are looking for a challenge, our
+lab members enjoy participating in <a href="https://adventofcode.com/">Advent of
+Code</a>. It forces you to think outside the box
+and will teach you some new tricks!</p>
+<div id="r" class="section level3 hasAnchor">
+<h3><span class="header-section-number">2.1.1</span> R<a href="programming-tools.html#r" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><a href="https://www.r-project.org/">R</a> is very well-established and probably
+has the most support from all the languages we use. Most of the time,
+you can copy-paste your error message from R into Google, and you will
+find several solutions for your problem. A very helpful website is
+<a href="https://stackoverflow.com/">Stack Overflow</a>.</p>
+<div id="interface" class="section level4 hasAnchor">
+<h4><span class="header-section-number">2.1.1.1</span> Interface<a href="programming-tools.html#interface" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>In our lab, most people use <a href="https://www.rstudio.com/">RStudio</a> when
+they are working in R. RStudio allows you to very easily write and
+execute your scripts, create plots and keep an eye on your environment.
+It also includes a helpful debugging mode. Other, not as commonly used
+GUIs are <a href="https://rkward.kde.org/">RKWard</a>,
+<a href="https://www.blueskystatistics.com/Default.asp">BlueSky</a> and <a href="https://socialsciences.mcmaster.ca/jfox/Misc/Rcmdr/">R
+Commander</a>.</p>
+</div>
+<div id="resources" class="section level4 hasAnchor">
+<h4><span class="header-section-number">2.1.1.2</span> Resources<a href="programming-tools.html#resources" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>To get started, there are several books on how to use R.</p>
+<p><a href="https://r4ds.had.co.nz/">R for Data Science</a>: “You’ll learn how to get
+your data into R, get it into the most useful structure, transform it,
+visualise it and model it.”</p>
+<p><a href="https://adv-r.hadley.nz/">Advanced R</a>: “The book is designed primarily
+for R users who want to improve their programming skills and
+understanding of the language. It should also be useful for programmers
+coming to R from other languages, as help you to understand why R works
+the way it does.”</p>
+<p>Further reading:</p>
+<ul>
+<li><p>Coding Etiquette (in R) - slides from <em>Anne</em> prepared for BioInfo F2
+2020 (Where to store?)</p></li>
+<li><p>Troubleshooting in R - Slides from <em>Anne</em> prepared for BioInfo F2
+2020</p></li>
+<li><p>R for Dummies, Andrie de Vries &amp; Joris Meys, 2015 (PDF available,
+ask Jana)</p></li>
+</ul>
+</div>
+<div id="packages" class="section level4 hasAnchor">
+<h4><span class="header-section-number">2.1.1.3</span> Packages<a href="programming-tools.html#packages" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>What are <a href="https://r-pkgs.org/">R packages</a>?</p>
+<p>If you have a problem that you need a certain function to solve, many
+times you do not need to write that function from scratch yourself.
+Usually, another (more skilled) person has already written some code
+that solves this problem. These “packages of code” can be uploaded to
+CRAN (the Comprehensive R Archive Network) and then downloaded to be
+used by other users.</p>
+<p>An example: You have a nice plot and want to ensure it is easy to read
+and interpret for colorblind people. Now you could set all of your 200
+colors by hand so that it is not the default red-green nightmare, but it
+is much easier to just download a package called “viridis” that contains
+multiple color palettes that are optimized for this very use. Then, all
+you need to do is tell R to use the viridis palette instead of setting
+all colors by hand, which would get very tedious. Installing and loading
+a package via CRAN:</p>
+<pre><code>install.packages(&quot;PackageName&quot;)
+library(PackageName)</code></pre>
+<p>Note that packages need to be loaded into your environment using the
+<code>library()</code> command in order for R to use them. You can also download
+packages that are not yet on CRAN using
+<a href="https://www.r-project.org/nosvn/pandoc/devtools.html">devtools</a>.</p>
+<p>Commonly used packages in our working group include (but are not limited
+to):</p>
+<ul>
+<li><p><a href="https://www.tidyverse.org/">tidyverse</a></p></li>
+<li><p><a href="https://here.r-lib.org/">here</a></p></li>
+<li><p><a href="https://www.r-project.org/nosvn/pandoc/devtools.html">devtools</a></p></li>
+<li><p><a href="https://ggplot2.tidyverse.org/">ggplot2</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html">viridis</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/raster/index.html">raster</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/rgdal/index.html">rgdal</a></p></li>
+</ul>
+</div>
+<div id="rmd" class="section level4 hasAnchor">
+<h4><span class="header-section-number">2.1.1.4</span> Rmd<a href="programming-tools.html#rmd" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>R Markdown is a great way to create documents in HTML, Word or PDF
+format. Rmds can include chunks of code which create the tables and
+plots of the document. This way, you don’t have to update your document
+parallel to your code, as you keep both your code to create your plots
+and said plots in the file. This file was also created using Rmd! You
+can also use .Rmd files to create computational notebooks.</p>
+<p><a href="https://bookdown.org/yihui/rmarkdown/">Best overall guide</a></p>
+<p>A future alternative might be <a href="https://quarto.org/">quarto</a>.</p>
+<p>Resources from course SystemAdmin 2020, prepared by <em>Anne</em>. Where to
+store?</p>
+</div>
+</div>
+<div id="julia-the-language" class="section level3 hasAnchor">
+<h3><span class="header-section-number">2.1.2</span> Julia, the language<a href="programming-tools.html#julia-the-language" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><a href="https://julialang.org/">Julia</a> is a relatively new programming language
+with a significantly higher performance than R. For complex models that
+take a lot of time to run in R, it might make sense to transfer them to
+Julia. While it has many advantages, it is not as well-known as R, so
+you may need to search for an explanation for your error message a bit
+longer. Julia has its own <a href="https://discourse.julialang.org/">Discourse</a>
+page with many helpful entries and tutorials as well.</p>
+<p>The Julia <a href="https://docs.julialang.org/en/v1/">Documentation</a> is also
+VERY good.</p>
+<p>To quickly look up Julia syntax, you can use this <a href="https://juliadocs.github.io/Julia-Cheat-Sheet/">Cheat
+Sheet</a>.</p>
+<div id="best-tutorials" class="section level4 hasAnchor">
+<h4><span class="header-section-number">2.1.2.1</span> Best tutorials<a href="programming-tools.html#best-tutorials" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>To get started,
+<a href="https://benlauwens.github.io/ThinkJulia.jl/latest/book.html">here</a> is a
+very nice book for beginners by Ben Lauwens and Allen Downey that
+explains not only the Julia language, but also introduces the concept of
+programming in general.</p>
+<p><a href="https://juliaacademy.com/courses">JuliaAcademy</a> offers an introductory
+course that is tried and liked by Robin.</p>
+<p>If you are not that into reading, the official Julia Programming
+Language <a href="https://www.youtube.com/channel/UC9IuUwwE2xdjQUT_LMLONoA">Youtube
+channel</a> has
+some very nice tutorials structured by playlists. One especially helpful
+playlist is <a href="https://www.youtube.com/watch?v=ub3tqCWZmo4&amp;list=PLP8iPy9hna6Qpx0MgGyElJ5qFlaIXYf1R">Julia Programming for Nervous
+Beginners</a>.
+They also hold the annual <a href="https://juliacon.org/2022/">JuliaCon</a> online
+and upload the speaker’s talks to Youtube if you cannot be there live.</p>
+</div>
+<div id="plotting-in-julia" class="section level4 hasAnchor">
+<h4><span class="header-section-number">2.1.2.2</span> Plotting in Julia<a href="programming-tools.html#plotting-in-julia" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Plots in Julia can be a bit more tricky than in R (but that might be
+because we are used to plotting in R - don’t let this discourage you
+from plotting your heart out in Julia if that is what you want to do!).
+Here are some packages that may help facilitate your plotting
+adventures:</p>
+<ul>
+<li><p><a href="https://juliapackages.com/c/graphical-plotting">This</a> page shows a
+list of graphical plotting packages</p></li>
+<li><p><a href="https://makie.juliaplots.org/stable/">GLMakie</a> is used by <em>Robin</em></p></li>
+</ul>
+</div>
+<div id="interface-1" class="section level4 hasAnchor">
+<h4><span class="header-section-number">2.1.2.3</span> Interface<a href="programming-tools.html#interface-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>As for R, you can choose from a variety of interfaces for Julia. In our
+working group, these are the most common ones:</p>
+<ul>
+<li><p><a href="https://junolab.org/">Atom and Juno</a> for julia.
+<a href="https://techytok.com/atom-and-juno-setup-for-julia/">Here</a> is a
+nice tutorial on how to set it up. However, even though popular in
+our lab, Juno will receive no more feature updates as of March 2022,
+so if you are new to Julia, it might be best to choose a different
+IDE.</p></li>
+<li><p><a href="https://www.julia-vscode.org/">VSCode</a> is the successor of Juno. It
+works in a similar way and is also used by some members of our lab
+and is at this point the recommended option to use.</p></li>
+<li><p>if you are interested in using a Computational Notebook (see section
+below), <a href="https://jupyter.org/">Jupyter</a> might be a good fit for you.
+Learn how to use Jupyter and Julia together
+<a href="https://datatofish.com/add-julia-to-jupyter/">here</a>. This is still
+a bit buggy, though.</p></li>
+</ul>
+</div>
+</div>
+<div id="version-control" class="section level3 hasAnchor">
+<h3><span class="header-section-number">2.1.3</span> Version control<a href="programming-tools.html#version-control" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Git is a great software that allows you to keep track of the changes you
+make in your code (version control). This way, you will not need to keep
+several files named “Code_02_revised” and “Code_02_revised_changed” etc,
+which can quickly get confusing. There are different servers that you
+can store your repositories on, the most common ones being
+<a href="https://github.com/">GitHub</a> and <a href="https://about.gitlab.com/">GitLab</a>.
+You can install git on your PC and use it via the commandline, or you
+can use it with the help of a UI, like <a href="https://desktop.github.com/">GitHub
+Desktop</a>. This is a very helpful <a href="https://github.com/UnseenWizzard/git_training">Training
+and Tutorial</a> that
+explains what git is and how to use it very nicely.</p>
+</div>
+<div id="bash-commands" class="section level3 hasAnchor">
+<h3><span class="header-section-number">2.1.4</span> Bash commands<a href="programming-tools.html#bash-commands" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>When we let our models run, they tend to need a lot of computational
+power. Running experiments on your laptop can take days, weeks or even
+months. Therefore, we can send our scripts to more powerful machines
+from the University infrastructure. To tell the computer “execute script
+XXX” you need to write a short shell using bash.</p>
+<p>A nice tool to use for bash scripts is
+<a href="https://github.com/koalaman/shellcheck">shellcheck</a> - Robin</p>
+<p>For an example bash script see section IT infrastructure - Using HPC
+Julia</p>
+</div>
+</div>
+<div id="advanced-tools" class="section level2 hasAnchor">
+<h2><span class="header-section-number">2.2</span> Advanced tools<a href="programming-tools.html#advanced-tools" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="singularity" class="section level3 hasAnchor">
+<h3><span class="header-section-number">2.2.1</span> Singularity<a href="programming-tools.html#singularity" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><a href="https://sylabs.io/guides/3.5/user-guide/quick_start.html" class="uri">https://sylabs.io/guides/3.5/user-guide/quick_start.html</a></p>
+<p>Singularity is a way to use containers, small virtual machines that use
+the resources of the computer they run on but have their own
+environment. This will only be a short explanation on how to use them
+otherwise refer to the official documentation.</p>
+<p>Before a container can be used it first has to be built. This can be
+done by either using a <code>.def</code> file (Only if you have sudo rights on the
+local machine and under Linux so use Linux or WSL) or you can get it on
+the base of an existing container in the Singularity library or from
+docker. Prebuilt containers on the gaias are stored in
+<code>/storage/singularity_images</code>. <code>ecomodsdm.sif</code> is a container based on
+<code>docker://rocker/geospatial</code></p>
+<p>The main ways to use Singularity containers are with the commands:<br />
+- - <code>singularity shell [container.sif]</code> opens a shell in the provided
+container - <code>singularity exec [container.sif]</code> This executes a
+predefined command as defined in the definition file -
+<code>singularity exec [container.sif] [command]</code> This only executes the
+requested command e.g. opens R or executes a program<br />
+By default <code>/home/$USER</code> is bound into the container at execution. If
+more folders need to be bound into it do this with the
+<code>--bind [local]:[container]</code> option</p>
+</div>
+<div id="emacs-vim-and-spacemacs" class="section level3 hasAnchor">
+<h3><span class="header-section-number">2.2.2</span> EMACS, Vim, and Spacemacs<a href="programming-tools.html#emacs-vim-and-spacemacs" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>????</p>
+</div>
+<div id="regex" class="section level3 hasAnchor">
+<h3><span class="header-section-number">2.2.3</span> Regex<a href="programming-tools.html#regex" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><em>Robin</em></p>
+<p>A handy website that goes through the basics of Regular Expression
+grammar:<br />
+<a href="https://ryanstutorials.net/regular-expressions-tutorial" class="uri">https://ryanstutorials.net/regular-expressions-tutorial</a></p>
+<p><a href="https://regex101.com/" class="uri">https://regex101.com/</a></p>
+</div>
+<div id="backup-and-storage-of-data-and-code" class="section level3 hasAnchor">
+<h3><span class="header-section-number">2.2.4</span> Backup and Storage of Data and Code<a href="programming-tools.html#backup-and-storage-of-data-and-code" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>For code: via git, e.g. on GitHub</p>
+<p>Code: ?</p>
+</div>
+</div>
+<div id="best-practices" class="section level2 hasAnchor">
+<h2><span class="header-section-number">2.3</span> Best practices<a href="programming-tools.html#best-practices" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="best-modeling-and-programming-practices" class="section level3 hasAnchor">
+<h3><span class="header-section-number">2.3.1</span> Best Modeling and Programming practices<a href="programming-tools.html#best-modeling-and-programming-practices" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>There are some practices in modelling and programming that make the job
+a lot easier. Our former colleague,
+<a href="https://www.ufz.de/index.php?en=48991">Daniel</a>, has put together some
+thoughts on what to keep in mind:</p>
+<ol style="list-style-type: decimal">
+<li><p>Use relative paths</p></li>
+<li><p>Document your code and how to use it Using Github/Gitlab. Gitlab is
+self-hosted (Biology). Zenodo is citable, trusted third-party.</p>
+<ol style="list-style-type: decimal">
+<li><p>User Manual</p></li>
+<li><p>DeveloperManual</p></li>
+</ol></li>
+<li><p>Script (automatize) experimental steps (i.e. pipeline)</p>
+<ol style="list-style-type: decimal">
+<li>Analyses in a single R script</li>
+</ol></li>
+<li><p>Use version control</p>
+<ol style="list-style-type: decimal">
+<li><p>Use commit identifier to refer to a particular code version for
+a experiment</p></li>
+<li><p>Use seeds for replicate (must be robust for changes in OS)</p></li>
+<li><p>Map and config file as output (for seed for example) Data
+longevity &amp; accessibility: Use storage folder in gaias. Physical
+backup, repository of very large data. Container for codes that
+require dependencies and particular versions.</p></li>
+</ol></li>
+</ol>
+</div>
+<div id="blog-post-series-on-software-development" class="section level3 hasAnchor">
+<h3><span class="header-section-number">2.3.2</span> Blog post series on software development<a href="programming-tools.html#blog-post-series-on-software-development" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Daniel also has a nice blog post series if you want to read more.</p>
+<ol style="list-style-type: decimal">
+<li><p><a href="https://terranostra.one/posts/Principles-of-Software-Development.html">Principles of Software
+Development</a></p></li>
+<li><p><a href="https://terranostra.one/posts/Understandable-Software.html">Understandable
+Software</a></p></li>
+<li><p><a href="https://terranostra.one/posts/The-Art-of-Abstraction.html">The Art of
+Abstraction</a></p></li>
+<li><p><a href="https://terranostra.one/posts/Dealing-with-Errors.html">Dealing with
+Errors</a></p></li>
+<li><p><a href="https://terranostra.one/posts/Programming-tools-languages.html">Programming Tools:
+Languages</a></p></li>
+<li><p><a href="https://terranostra.one/posts/Programming-tools-paradigms.html">Programming Tools:
+Paradigms</a></p></li>
+<li><p><a href="https://terranostra.one/posts/Developing-in-a-team.html">Developing in a
+Team</a></p></li>
+<li><p><a href="https://terranostra.one/posts/Some-final-thoughts-on-programming.html">Final
+Thoughts</a></p></li>
+</ol>
+<p>See also <span class="citation">(Vedder, Ankenbrand, and Sarmento Cabral <a href="#ref-vedder2021" role="doc-biblioref">2021</a>)</span>: Vedder, Ankenbrand &amp; Cabral (2021) “Dealing with
+Software Complexity in Individual-based Models”, Methods in Ecology and
+Evolution (<a href="https://doi.org/10.1111/2041-210X.13716" class="uri">https://doi.org/10.1111/2041-210X.13716</a>)</p>
+
+</div>
+</div>
+</div>
+<h3>References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="refs" class="references">
+<div id="ref-vedder2021">
+<p>Vedder, Daniel, Markus Ankenbrand, and Juliano Sarmento Cabral. 2021. “Dealing with Software Complexity in Individual-Based Models.” <em>Methods in Ecology and Evolution</em> 12 (12): 2324–33. <a href="https://doi.org/10.1111/2041-210x.13716">https://doi.org/10.1111/2041-210x.13716</a>.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="it-infrastructure.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/01-basic-tools.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
