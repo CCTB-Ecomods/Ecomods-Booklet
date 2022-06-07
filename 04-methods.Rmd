@@ -12,6 +12,9 @@ group.
 
 ## Sensitivity Analyses
 
+Methods that determine how target variables are affected based on
+changes in other variables known as input variables.
+
 ### Overview
 
 General broad overview in **Sensitivity Analysis in Practice : A Guide
@@ -50,16 +53,18 @@ Differential evolution optimization Differential Evolution with DEoptim
 florianhartig/LearningBayes: An introduction to Bayesian statistics
 Bayesian Tools - General-Purpose MCMC and SMC Samplers and Tools for
 Bayesian Statistics Inverse modeling
-<https://arxiv.org/ftp/arxiv/papers/2007/2007.15580.pdf> \#\#\#
-Emulatoren Approximieren das Modell selbst "modelling a model" /
+<https://arxiv.org/ftp/arxiv/papers/2007/2007.15580.pdf>
+
+\#\#\# Emulatoren Approximieren das Modell selbst "modelling a model" /
 "meta-model"
 
 ### Neural networks
 
 <https://arxiv.org/ftp/arxiv/papers/2007/2007.15580.pdf>
 <https://link.springer.com/chapter/10.1007%2F978-3-030-44584-3_43>
-<https://royalsocietypublishing.org/doi/10.1098/rsbl.2017.0660> \#\#\#\#
-Bayesian <https://bg.copernicus.org/articles/15/5801/2018/>
+<https://royalsocietypublishing.org/doi/10.1098/rsbl.2017.0660>
+
+\#\#\#\# Bayesian <https://bg.copernicus.org/articles/15/5801/2018/>
 
 ### Tips and Tricks
 
@@ -89,14 +94,26 @@ few as 4 species.
 
 For multivariate analyses:
 
--   i) MANOVA (because traits are not independent from one another) and
-    canonical discriminant analyses (CDA) =Y check R package candisc
+-   
 
--   ii) trait network analyses (R package igraph - Csardi and Nepusz,
-    2006) + Mantel test for comparing trait correlations across groups
-    (e.g. taxonomic, trophic or guild groups)
+    i)  MANOVA (because traits are not independent from one another) and
+        canonical discriminant analyses (CDA) =Y check R package candisc
 
--   iii) PCA (useful for visualization as well)
+-   
+
+    ii) trait network analyses (R package igraph - Csardi and Nepusz,
+
+    ```{=html}
+    <!-- -->
+    ```
+    2006) 
+
+          -   Mantel test for comparing trait correlations across groups
+              (e.g. taxonomic, trophic or guild groups)
+
+-   
+
+    iii) PCA (useful for visualization as well)
 
 ## SDMs
 
@@ -166,7 +183,7 @@ For ensemble models:
 
 Useful literature:
 
--   [@hao2019]
+-   Review about SDMs [@hao2019]
 
 -   ODMAP: A standard protocol for reporting SDMs [@zurell2020]
 

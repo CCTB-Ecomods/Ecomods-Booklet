@@ -52,10 +52,10 @@ the way it does."
 Further reading:
 
 -   Coding Etiquette (in R) - slides from *Anne* prepared for BioInfo F2
-    2020 (Where to store?)
+    2020 (ask Anne)
 
 -   Troubleshooting in R - Slides from *Anne* prepared for BioInfo F2
-    2020
+    2020 (ask Anne)
 
 -   R for Dummies, Andrie de Vries & Joris Meys, 2015 (PDF available,
     ask Jana)
@@ -114,12 +114,9 @@ parallel to your code, as you keep both your code to create your plots
 and said plots in the file. This file was also created using Rmd! You
 can also use .Rmd files to create computational notebooks.
 
-[Best overall guide](https://bookdown.org/yihui/rmarkdown/)
+[Best overall guide](https://bookdown.org/yihui/rmarkdown/) is linked.
 
 A future alternative might be [quarto](https://quarto.org/).
-
-Resources from course SystemAdmin 2020, prepared by *Anne*. Where to
-store?
 
 ### Julia, the language
 
@@ -224,8 +221,6 @@ Julia
 
 ### Singularity
 
-<https://sylabs.io/guides/3.5/user-guide/quick_start.html>
-
 Singularity is a way to use containers, small virtual machines that use
 the resources of the computer they run on but have their own
 environment. This will only be a short explanation on how to use them
@@ -249,25 +244,28 @@ By default `/home/$USER` is bound into the container at execution. If
 more folders need to be bound into it do this with the
 `--bind [local]:[container]` option
 
+[Here](https://sylabs.io/guides/3.5/user-guide/quick_start.html) is a
+users guide.
+
 ### EMACS, Vim, and Spacemacs
 
-????
+TODO
 
 ### Regex
 
 *Robin*
 
-A handy website that goes through the basics of Regular Expression
-grammar:\
-<https://ryanstutorials.net/regular-expressions-tutorial>
+-   A handy
+    [website](https://ryanstutorials.net/regular-expressions-tutorial)
+    that goes through the basics of Regular Expression grammar.
 
-<https://regex101.com/>
+-   WHAT IS THAT? <https://regex101.com/>
 
 ### Backup and Storage of Data and Code
 
 For code: via git, e.g. on GitHub
 
-Code: ?
+For data?
 
 ## Best practices
 
@@ -331,6 +329,4 @@ Daniel also has a nice blog post series if you want to read more.
 8.  [Final
     Thoughts](https://terranostra.one/posts/Some-final-thoughts-on-programming.html)
 
-See also [@vedder2021]: Vedder, Ankenbrand & Cabral (2021) "Dealing with
-Software Complexity in Individual-based Models", Methods in Ecology and
-Evolution (<https://doi.org/10.1111/2041-210X.13716>)
+See also the paper from Daniel [@vedder2021].

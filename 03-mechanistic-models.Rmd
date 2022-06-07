@@ -6,7 +6,6 @@ editor_options:
 
 # Process-based models
 
-## Some general ressources? 
 
 ## EcoMods models
 
@@ -14,6 +13,8 @@ Here, you will find all of our working group's models. For specific
 questions for each model, please refer to the respective lab member.
 
 ### GeMM
+
+TODO Robin
 
 ### MGM
 
@@ -32,8 +33,12 @@ Further questions: ask Anne
 
 ### metaRange
 
-general info
+general info - TODO JANA & STEFAN
 
 #### R version
 
+TODO Stefan
+
 #### Julia Version
+
+TODO Jana
