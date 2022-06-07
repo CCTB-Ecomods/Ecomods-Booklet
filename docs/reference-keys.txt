@@ -24,7 +24,7 @@ blog-post-series-on-software-development
 it-infrastructure
 ssh
 connect-with-ssh
-using-ssh-to-authenticate-your-github-account-todo-move-to-github-section
+using-ssh-to-authenticate-your-github-account-todo-move-to-github-section-or-set-links
 step-1-generate-an-ssh-keypair-on-the-server-and-copy-public-key-to-github
 step-2-test-the-connection
 ssh-alias
@@ -35,7 +35,6 @@ using-cctb-server-gaias-and-planets
 opening-an-rstudio-server-on-the-planets
 x2go
 process-based-models
-some-general-ressources
 ecomods-models
 gemm
 mgm
