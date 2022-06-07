@@ -5,6 +5,26 @@ make sense for you to learn how to structure your work day/week and your
 whole project so that you never lose track of what you need to do, and
 what you already have done, and how to do it all efficiently.
 
+
+## Computational Notebooks
+
+These are files that allow you to write descriptive text, code, and the
+output of that code. They are particularly useful for:
+
+-   learning and teaching coding, because the code and its output are
+    shown together, so you always know what does what
+-   documenting analysis/model development, because, besides the outputs
+    of the code you are trying out, descriptive text can help elaborate
+    your ideas better, and even include figures or links in the same
+    file as the code you are working on.
+-   sharing computational work: Your collaborator/supervisor will be
+    able to follow your reasoning with the descriptive text and check
+    your work in the code blocks and its outputs.
+
+See the complete tutorial
+[here](https://github.com/FellowsFreiesWissen/computational_notebooks).
+
+
 ## Excel-based orga
 
 [Anne](https://www.biozentrum.uni-wuerzburg.de/cctb/research/ecosystem-modeling/people/anne-lewerentz/)

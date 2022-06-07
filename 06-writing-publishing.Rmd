@@ -1,8 +1,30 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
 # Writing & Publishing
+
+## Tools
+
+### latex
+
+Latex is a software to write text. You can find thousands of tutorials
+online. If you want to work with latex on shared documents, consider
+[overleaf](https://de.overleaf.com/).
+
+### Others
+
+Other tools can be:
+
+-   Markdown
+-   Word
+-   Google drive (for collaboration) ...
 
 ## Writing Papers
 
-Here some general tips for structuring and writing the manuscript.
+Here some general tips for structuring and writing a manuscript.
 
 ### Structuring the manuscript
 
@@ -13,7 +35,7 @@ Here some general tips for structuring and writing the manuscript.
 -   The manuscript needs to have page and line numbers, double spaced
     lines
 
--   Abstract:
+-   **Abstract:**
 
     -   Normally abstracts are around 300 words. For a better abstract,
         structure it in small sections, much like manuscript itself:
@@ -21,63 +43,84 @@ Here some general tips for structuring and writing the manuscript.
 
     -   No references in the abstract
 
--   Introduction:
+-   **Introduction:**
 
     -   A ideal introduction has a simple structure without subheaders,
-        but with generally 4-5 paragraphs:  First paragraph: Present
-        the key challenge of the manuscript, general importance of this
-        challenge for science and open questions  Second paragraph:
-        Details on what people has already found out about the main
-        challenge.  Third paragraph: what is the best study system, why
-        and open questions  Fourth paragraph: what is the best tool or
-        method strategy and why. This paragraph may be merged with the
-        third one if study system and tool are too intertwined  Fifth
-        paragraph: Aims, specific study questions and hypotheses,
-        experimental design, expectations. It will help the paper
-        structure if you explicitly list with numbers very specific
-        questions or hypotheses to be addressed by the experiment and
-        analyses.
+        but with generally 4-5 paragraphs:
 
--   General suggestion: every paragraph must have the first sentence
-    presenting the topic of the paragraph and everything related to it
-    must be in the same paragraph. If the paragraph is in the
-    introduction, the last sentence may be related to an open question
-    that will be targeted in your study. If the paragraph is in the
-    discussion, the last sentence must be a strong concluding sentence
-    with a take-home message based in your findings.
+        -   First paragraph: Present the key challenge of the
+            manuscript, general importance of this challenge for science
+            and open questions
 
--   Methods must have one general, but small paragraph telling what was
-    the main methodologicla approach. Then the methods must be
-    structured in subsections. Typically, these are:
+        -   Second paragraph: Details on what people has already found
+            out about the main challenge.
 
-    -   ‚Study system' or ‚empirical data' if empirical or ‚Model
-        description' is modelling manuscript (with many
-        sub-subsections):  For modeling papers, follow the ODD protocol
-        (Grimm et al. 2010 -
-        <https://www.sciencedirect.com/science/article/abs/pii/S030438001000414X>)
-         It is also useful to document model development, mostly as
-        Appendix, with a TRACE document (Grimm et al. 2014 -
-        <https://www.sciencedirect.com/science/article/abs/pii/S0304380014000611>)
-        o ‚Experimental design': this must explain what experiments were
-        carrying out to answer i) all the questions; ii) particular
-        questions. Normally you have one figure illustrating the
-        scenarios. o ‚Analyses': Start with a general paragraph
-        explaining what model output you used for analyses, whether you
-        did further calculations and manipulations for analyses that are
-        relevant for all study questions. Thereafter, then follow the
-        structure of the hypotheses and create one paragraph for study
-        question and explain what analyses were carried out to answer
-        explicitly each specific study question.
+        -   Third paragraph: what is the best study system, why and open
+            questions
 
--   Results: Start explaining general overall findings, then structure
-    according to the study questions/hypotheses. Normally you have one
-    Figure for each question.
+        -   Fourth paragraph: what is the best tool or method strategy
+            and why. This paragraph may be merged with the third one if
+            study system and tool are too intertwined
 
--   Discussion: This is where you discuss the findings in relation to
-    one another and tot he literature. It is useful to start discussing
-    the results in a section per study quesiton. Then add a section on
-    implications to theory and conservation. Another section to
-    limitations and perspectives. Finally a conclusion.
+        -   Fifth paragraph: Aims, specific study questions and
+            hypotheses, experimental design, expectations. It will help
+            the paper structure if you explicitly list with numbers very
+            specific questions or hypotheses to be addressed by the
+            experiment and analyses.
+
+    -   General suggestion: every paragraph must have the first sentence
+        presenting the topic of the paragraph and everything related to
+        it must be in the same paragraph. If the paragraph is in the
+        introduction, the last sentence may be related to an open
+        question that will be targeted in your study. If the paragraph
+        is in the discussion, the last sentence must be a strong
+        concluding sentence with a take-home message based in your
+        findings.
+
+-   **Methods**
+
+    -   must have one general, but small paragraph telling what was the
+        main methodological approach.
+
+    -   Then the methods must be structured in subsections. Typically,
+        these are:
+
+        -   ‚Study system' or ‚empirical data' if empirical or ‚Model
+            description' is modelling manuscript (with many
+            sub-subsections):
+
+            -   For modeling papers, follow the ODD protocol
+                [@grimm2010]
+
+            -   It is also useful to document model development, mostly
+                as Appendix, with a TRACE document [@grimm2014]
+
+        -   ‚Experimental design': this must explain what experiments
+            were carrying out to answer i) all the questions; ii)
+            particular questions. Normally you have one figure
+            illustrating the scenarios.
+
+        -   ‚Analyses': Start with a general paragraph explaining what
+            model output you used for analyses, whether you did further
+            calculations and manipulations for analyses that are
+            relevant for all study questions. Thereafter, then follow
+            the structure of the hypotheses and create one paragraph for
+            study question and explain what analyses were carried out to
+            answer explicitly each specific study question.
+
+-   **Results:**
+
+    -   Start explaining general overall findings, then structure
+        according to the study questions/hypotheses. Normally you have
+        one Figure for each question.
+
+-   **Discussion:**
+
+    -   This is where you discuss the findings in relation to one
+        another and tot he literature. It is useful to start discussing
+        the results in a section per study question. Then add a section
+        on implications to theory and conservation. Another section to
+        limitations and perspectives. Finally a conclusion.
 
 ### Language Tips
 
@@ -165,4 +208,3 @@ Minor points:
 paragraph, table or figure. Normally these are unclear statements,
 typos, errors, missing information, poor design, formatting issues.
 These can be normally quickly solved.]
-

@@ -1,4 +1,12 @@
-# Basic tools
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+# Programming tools
+
+## Basic tools and languages
 
 The most commonly used programming languages in our lab are R and Julia.
 They are both great languages for biology-related programming and
@@ -9,13 +17,7 @@ lab members enjoy participating in [Advent of
 Code](https://adventofcode.com/). It forces you to think outside the box
 and will teach you some new tricks!
 
-## Programming in general
-
-If you have never programmed before, ....
-
-crash course
-
-## R
+### R
 
 [R](https://www.r-project.org/) is very well-established and probably
 has the most support from all the languages we use. Most of the time,
@@ -23,7 +25,7 @@ you can copy-paste your error message from R into Google, and you will
 find several solutions for your problem. A very helpful website is
 [Stack Overflow](https://stackoverflow.com/).
 
-### Interface
+#### Interface
 
 In our lab, most people use [RStudio](https://www.rstudio.com/) when
 they are working in R. RStudio allows you to very easily write and
@@ -33,7 +35,7 @@ GUIs are [RKWard](https://rkward.kde.org/),
 [BlueSky](https://www.blueskystatistics.com/Default.asp) and [R
 Commander](https://socialsciences.mcmaster.ca/jfox/Misc/Rcmdr/).
 
-### Resources
+#### Resources
 
 To get started, there are several books on how to use R.
 
@@ -58,7 +60,7 @@ Further reading:
 -   R for Dummies, Andrie de Vries & Joris Meys, 2015 (PDF available,
     ask Jana)
 
-### Packages
+#### Packages
 
 What are [R packages](https://r-pkgs.org/)?
 
@@ -103,13 +105,14 @@ to):
 
 -   [rgdal](https://cran.r-project.org/web/packages/rgdal/index.html)
 
-### Rmd
+#### Rmd
 
 R Markdown is a great way to create documents in HTML, Word or PDF
 format. Rmds can include chunks of code which create the tables and
 plots of the document. This way, you don't have to update your document
 parallel to your code, as you keep both your code to create your plots
-and said plots in the file. This file was also created using Rmd!
+and said plots in the file. This file was also created using Rmd! You
+can also use .Rmd files to create computational notebooks.
 
 [Best overall guide](https://bookdown.org/yihui/rmarkdown/)
 
@@ -118,7 +121,7 @@ A future alternative might be [quarto](https://quarto.org/).
 Resources from course SystemAdmin 2020, prepared by *Anne*. Where to
 store?
 
-## Julia, the language
+### Julia, the language
 
 [Julia](https://julialang.org/) is a relatively new programming language
 with a significantly higher performance than R. For complex models that
@@ -134,7 +137,7 @@ VERY good.
 To quickly look up Julia syntax, you can use this [Cheat
 Sheet](https://juliadocs.github.io/Julia-Cheat-Sheet/).
 
-### Best tutorials
+#### Best tutorials
 
 To get started,
 [here](https://benlauwens.github.io/ThinkJulia.jl/latest/book.html) is a
@@ -154,7 +157,7 @@ Beginners](https://www.youtube.com/watch?v=ub3tqCWZmo4&list=PLP8iPy9hna6Qpx0MgGy
 They also hold the annual [JuliaCon](https://juliacon.org/2022/) online
 and upload the speaker's talks to Youtube if you cannot be there live.
 
-### Plotting in Julia
+#### Plotting in Julia
 
 Plots in Julia can be a bit more tricky than in R (but that might be
 because we are used to plotting in R - don't let this discourage you
@@ -167,7 +170,7 @@ adventures:
 
 -   [GLMakie](https://makie.juliaplots.org/stable/) is used by *Robin*
 
-### Interface
+#### Interface
 
 As for R, you can choose from a variety of interfaces for Julia. In our
 working group, these are the most common ones:
@@ -189,7 +192,7 @@ working group, these are the most common ones:
     [here](https://datatofish.com/add-julia-to-jupyter/). This is still
     a bit buggy, though.
 
-## Git
+### Version control
 
 Git is a great software that allows you to keep track of the changes you
 make in your code (version control). This way, you will not need to keep
@@ -203,25 +206,7 @@ Desktop](https://desktop.github.com/). This is a very helpful [Training
 and Tutorial](https://github.com/UnseenWizzard/git_training) that
 explains what git is and how to use it very nicely.
 
-## Computational Notebooks
-
-These are files that allow you to write descriptive text, code, and the
-output of that code. They are particularly useful for:
-
--   learning and teaching coding, because the code and its output are
-    shown together, so you always know what does what
--   documenting analysis/model development, because, besides the outputs
-    of the code you are trying out, descriptive text can help elaborate
-    your ideas better, and even include figures or links in the same
-    file as the code you are working on.
--   sharing computational work: Your collaborator/supervisor will be
-    able to follow your reasoning with the descriptive text and check
-    your work in the code blocks and its outputs.
-
-See the complete tutorial
-[here](https://github.com/FellowsFreiesWissen/computational_notebooks).
-
-## Bash commands
+### Bash commands
 
 When we let our models run, they tend to need a lot of computational
 power. Running experiments on your laptop can take days, weeks or even
@@ -235,13 +220,7 @@ A nice tool to use for bash scripts is
 For an example bash script see section IT infrastructure - Using HPC
 Julia
 
-## latex
-
-Latex is a software to write text. You can find thousands of tutorials
-online. If you want to work with latex on shared documents, consider
-[overleaf](https://de.overleaf.com/).
-
-## Advanced
+## Advanced tools
 
 ### Singularity
 
@@ -284,4 +263,74 @@ grammar:\
 
 <https://regex101.com/>
 
-## Backup and Storage of Data and Code
+### Backup and Storage of Data and Code
+
+For code: via git, e.g. on GitHub
+
+Code: ?
+
+## Best practices
+
+### Best Modeling and Programming practices
+
+There are some practices in modelling and programming that make the job
+a lot easier. Our former colleague,
+[Daniel](https://www.ufz.de/index.php?en=48991), has put together some
+thoughts on what to keep in mind:
+
+1.  Use relative paths
+
+2.  Document your code and how to use it Using Github/Gitlab. Gitlab is
+    self-hosted (Biology). Zenodo is citable, trusted third-party.
+
+    1.  User Manual
+
+    2.  DeveloperManual
+
+3.  Script (automatize) experimental steps (i.e. pipeline)
+
+    1.  Analyses in a single R script
+
+4.  Use version control
+
+    1.  Use commit identifier to refer to a particular code version for
+        a experiment
+
+    2.  Use seeds for replicate (must be robust for changes in OS)
+
+    3.  Map and config file as output (for seed for example) Data
+        longevity & accessibility: Use storage folder in gaias. Physical
+        backup, repository of very large data. Container for codes that
+        require dependencies and particular versions.
+
+### Blog post series on software development
+
+Daniel also has a nice blog post series if you want to read more.
+
+1.  [Principles of Software
+    Development](https://terranostra.one/posts/Principles-of-Software-Development.html)
+
+2.  [Understandable
+    Software](https://terranostra.one/posts/Understandable-Software.html)
+
+3.  [The Art of
+    Abstraction](https://terranostra.one/posts/The-Art-of-Abstraction.html)
+
+4.  [Dealing with
+    Errors](https://terranostra.one/posts/Dealing-with-Errors.html)
+
+5.  [Programming Tools:
+    Languages](https://terranostra.one/posts/Programming-tools-languages.html)
+
+6.  [Programming Tools:
+    Paradigms](https://terranostra.one/posts/Programming-tools-paradigms.html)
+
+7.  [Developing in a
+    Team](https://terranostra.one/posts/Developing-in-a-team.html)
+
+8.  [Final
+    Thoughts](https://terranostra.one/posts/Some-final-thoughts-on-programming.html)
+
+See also [@vedder2021]: Vedder, Ankenbrand & Cabral (2021) "Dealing with
+Software Complexity in Individual-based Models", Methods in Ecology and
+Evolution (<https://doi.org/10.1111/2041-210X.13716>)

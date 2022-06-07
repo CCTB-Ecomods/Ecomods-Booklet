@@ -1,37 +1,42 @@
---- 
+---
 title: "EcoMods Booklet"
-author: "The EcoMods Würzburg"
+author: "The EcoMods, Würzburg"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
-# url: your book url like https://bookdown.org/yihui/bookdown
+url: https://cctb-ecomods.github.io/Ecomods-Booklet
 # cover-image: path to the social sharing image like images/cover.jpg
 description: |
   This is HowTo of the CCTB Würzburg EcoMods members.
 link-citations: yes
-github-repo: rstudio/bookdown-demo
+github-repo: CCTB-Ecomods/Ecomods-Booklet
+editor_options: 
+  markdown: 
+    wrap: 72
 ---
 
 # Hello and welcome to the EcoMods working group!
 
 In this document, you will (hopefully) find everything you need for your
-course/internship/thesis with us. The very first things you should do
-before starting your work are:
+course / internship / thesis with us. The very first things you should
+do before starting your work are:
 
--   subscribe to the CCTB and EcoMods [mailing
+-   **Mailinglists**: subscribe to the CCTB and EcoMods [mailing
     lists](https://lists.uni-wuerzburg.de). Select CCTB and ecomod-cctb
     and register using your email address. These lists are used for
     announcements of talks or other important events.
 
--   get an account in the CCTB server. Our IT support, Patrick Haag
-    (patrick.haag(at)uni-wuerzburg.de), can do this for you.
+-   **Account**: get an account in the CCTB server. Our IT support,
+    Patrick Haag (patrick.haag(at)uni-wuerzburg.de), can do this for
+    you.
 
--   get access to the building. Your student ID card needs to be
-    unlocked to be able to use it as a key for all doors. Patrick will
-    also help you with this.
+-   **Keys**: get access to the building. Your student ID card needs to
+    be unlocked to be able to use it as a key for all doors. Patrick
+    will also help you with this.
 
--   remind your supervisor to send you an invitation link for our
+-   **Mattermost**: remind your supervisor to send you an invitation
+    link for our
     [Mattermost](https://cctb-intern.biologie.uni-wuerzburg.de). We use
     Mattermost for CCTB-wide communication. Be aware that the
     certificate for enabling https is self-signed. This means when you
@@ -42,80 +47,32 @@ before starting your work are:
     There is also a [Desktop
     App](https://about.mattermost.com/download/#mattermostApps).
 
--   save these time slots for obligatory participation:
+-   **Meetings**: save these time slots for obligatory participation:
 
     -   weekly CCTB seminar, Wednesdays 11:00-12:00
     -   weekly EcoMods lab meeting, Thursdays 13:30-15:00
 
--   we also have a CCTB
-    [Gathertown](https://gather.town/app/r4oLVM25VSqeXimY/CCTB) which is
-    basically a virtual office space. It was used a lot during home
-    office times, now, not as much anymore. But if you post on
-    Mattermost that you would like to meet for a virtual coffee break,
-    people will show up!
+-   **Gathertown**: we also have a CCTB Gathertown which is basically a
+    virtual office space. It was used a lot during home office times,
+    now, not as much anymore. But if you post on Mattermost that you
+    would like to meet for a virtual coffee break, people will show up!
+    You'll find the link in the header of the town-square channel on
+    Mattermost
 
--   if you ever run into any IT-related problems that you cannot solve
-    alone, post it in the Mattermost IT channel.
-
+-   **IT questions:** if you ever run into any IT-related problems that
+    you cannot solve alone, post it in the Mattermost IT channel.
 
 We hope that this document helps you to learn more about how to do
-Ecological Modelling and how to navigate life at the CCTB. If you have
+Ecological Modeling and how to navigate life at the CCTB. If you have
 any questions, you can come by our offices or send us an email any time.
 
 We also gladly accept any suggestions on how to improve this guide, so
 let us know if you feel that anything is missing!
 
-
+## Missing sections & todos
 
 *Juliano*, do you have scripts for these points below that I could link?
 
 Playing with R Codes - Intro R - First Models - Intro Ecological
 Functions and Simulations Exercise - First Functions and Simulations -
 Shiny
-
-
-
-
-
-
-This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports; for example, a math equation $a^2 + b^2 = c^2$.
-
-## Usage 
-
-Each **bookdown** chapter is an .Rmd file, and each .Rmd file can contain one (and only one) chapter. A chapter *must* start with a first-level heading: `# A good chapter`, and can contain one (and only one) first-level heading.
-
-Use second-level and higher headings within chapters like: `## A short section` or `### An even shorter section`.
-
-The `index.Rmd` file is required, and is also your first book chapter. It will be the homepage when you render the book.
-
-## Render book
-
-You can render the HTML version of this example book without changing anything:
-
-1. Find the **Build** pane in the RStudio IDE, and
-
-1. Click on **Build Book**, then select your output format, or select "All formats" if you'd like to use multiple formats from the same book source files.
-
-Or build the book from the R console:
-
-```{r, eval=FALSE}
-bookdown::render_book()
-```
-
-To render this example to PDF as a `bookdown::pdf_book`, you'll need to install XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <https://yihui.org/tinytex/>.
-
-## Preview book
-
-As you work, you may start a local server to live preview this HTML book. This preview will update as you edit the book when you save individual .Rmd files. You can start the server in a work session by using the RStudio add-in "Preview book", or from the R console:
-
-```{r eval=FALSE}
-bookdown::serve_book()
-```
-
-
-```{r include=FALSE}
-# automatically create a bib database for R packages
-knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown'
-), 'packages.bib')
-```

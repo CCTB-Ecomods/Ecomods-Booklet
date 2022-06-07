@@ -1,3 +1,9 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
 # Computational methods
 
 Now, let's come to the more practical part of our Beginner's Guide.
@@ -5,8 +11,6 @@ Here, you will get an overview on the methods that we use in our working
 group.
 
 ## Sensitivity Analyses
-
-Anne
 
 ### Overview
 
@@ -27,16 +31,12 @@ comparison between data and model (as you would use in the validation)
 
 Morris screening and enhancement as used in the R package sensitivity
 (Campolongo et al.):
-[<https://doi.org/10.1016/j.envsoft.2006.10.004>](https://doi.org/10.1016/j.envsoft.2006.10.004){.uri}
+[\<https://doi.org/10.1016/j.envsoft.2006.10.004\>](https://doi.org/10.1016/j.envsoft.2006.10.004){.uri}
 [@campolongo2007]
 
 ## Virtual ecologist
 
-## Forward simulations
-
-## Basic Phylogenetic analyses
-
-Robin
+TODO
 
 ## Parameter optimization
 
@@ -54,7 +54,7 @@ Bayesian Statistics Inverse modeling
 Emulatoren Approximieren das Modell selbst "modelling a model" /
 "meta-model"
 
-### Neural networks 
+### Neural networks
 
 <https://arxiv.org/ftp/arxiv/papers/2007/2007.15580.pdf>
 <https://link.springer.com/chapter/10.1007%2F978-3-030-44584-3_43>
@@ -78,92 +78,96 @@ Regensburg. This course is held in R.
 
 ## Phylogenetic Analyses
 
+TODO
+
 ## Functional Analyses
 
 Wright et al (2005) provides a good basis for 'trusting' trait-trait
-associations above 5-fold variation and/or n=20 spp, within a study.
-Although Wright et al. show trait correlations with as few as 4 species.
+associations above 5-fold variation and/or n=20 spp, within a study
+[@wright2005]. Although Wright et al. show trait correlations with as
+few as 4 species.
 
-Wright, Ian J., et al. Assessing the generality of global leaf trait
-relationships. New phytologist 166,(2005): 485-496.
+For multivariate analyses:
 
-For multivariate analyses: i) MANOVA (because traits are not independent
-from one another) and canonical discriminant analyses (CDA) =Y check R
-package candisc ii) trait network analyses (R package igraph - Csardi
-and Nepusz, 2006) + Mantel test for comparing trait correlations across
-groups (e.g. taxonomic, trophic or guild groups) iii) PCA (useful for
-visualization as well)
+-   i) MANOVA (because traits are not independent from one another) and
+    canonical discriminant analyses (CDA) =Y check R package candisc
+
+-   ii) trait network analyses (R package igraph - Csardi and Nepusz,
+    2006) + Mantel test for comparing trait correlations across groups
+    (e.g. taxonomic, trophic or guild groups)
+
+-   iii) PCA (useful for visualization as well)
 
 ## SDMs
 
+ToDo: WHAT IS A SDM?
+
 Tutorials:
 
-Damaris Zurell: <https://damariszurell.github.io/SDM-Intro/>
+-   Damaris Zurell: <https://damariszurell.github.io/SDM-Intro/>
 
-Babak Naimi: <https://www.youtube.com/watch?v=83dMS3bcjJM>
+-   Babak Naimi: <https://www.youtube.com/watch?v=83dMS3bcjJM>
 
-             https://www.biogeoinformatics.org/
-             
+-   <https://www.biogeoinformatics.org/>
 
-Daniel Griffith:
-<https://griffithdan.github.io/pages/outreach/SDM-Workshop-OSU-FALL2017.pdf>
+-   Daniel Griffith:
+    <https://griffithdan.github.io/pages/outreach/SDM-Workshop-OSU-FALL2017.pdf>
 
 Further:
 
-ModestR Software: <http://www.ipez.es/ModestR/>
+-   ModestR Software: <http://www.ipez.es/ModestR/>
 
-ModestR Tutorial:
-<https://www.slideshare.net/modestrsoftware/21-creating-virtual-species-and-calculating-simple-ensemble-models-with-r-that-can-be-later-used-with-version-modestr-56-or-higher>
+-   ModestR Tutorial:
+    <https://www.slideshare.net/modestrsoftware/21-creating-virtual-species-and-calculating-simple-ensemble-models-with-r-that-can-be-later-used-with-version-modestr-56-or-higher>
 
 Earlier models:
 
-BIOCLIM: <https://doi.org/10.1111/ddi.12144>
+-   BIOCLIM: <https://doi.org/10.1111/ddi.12144>
 
 Packages:
 
-sdm: <https://cran.r-project.org/web/packages/sdm/sdm.pdf>
+-   sdm: <https://cran.r-project.org/web/packages/sdm/sdm.pdf>
 
-kuenm: <https://peerj.com/articles/6281/>
+-   kuenm: <https://peerj.com/articles/6281/>
 
-virtualspecies: <https://doi.org/10.1111/ecog.01388>
+-   virtualspecies: <https://doi.org/10.1111/ecog.01388>
 
-               https://cran.r-project.org/web/packages/virtualspecies/virtualspecies.pdf
-               
+-   <https://cran.r-project.org/web/packages/virtualspecies/virtualspecies.pdf>
 
 For Maxent type of models:
 
-Evaluating Maxent niche models with ENMeval:
-<https://doi.org/10.1111/2041-210X.12261>
+-   Evaluating Maxent niche models with ENMeval:
+    <https://doi.org/10.1111/2041-210X.12261>
 
 For ensemble models:
 
-Biomod Paper: <https://doi.org/10.1111/j.1600-0587.2008.05742.x>
+-   Biomod Paper: <https://doi.org/10.1111/j.1600-0587.2008.05742.x>
 
-Biomod2 package:
+-   Biomod2 package:
 
-<https://cran.r-project.org/web/packages/biomod2/biomod2.pdf>
+-   <https://cran.r-project.org/web/packages/biomod2/biomod2.pdf>
 
-<https://github.com/biomodhub/biomod2>
+-   <https://github.com/biomodhub/biomod2>
 
-ESDM: <https://doi.org/10.1111/2041-210X.13283>
+-   ESDM: <https://doi.org/10.1111/2041-210X.13283>
 
-Stacked SDMs (for species richness/diversity):
+-   Stacked SDMs (for species richness/diversity):
 
-SSDM: <https://cran.r-project.org/web/packages/SSDM/vignettes/SSDM.html>
+-   SSDM:
+    <https://cran.r-project.org/web/packages/SSDM/vignettes/SSDM.html>
 
-Joint-SDMs for co-occurrence data:
+-   Joint-SDMs for co-occurrence data:
 
-with HMSC: <https://doi.org/10.1111/2041-210X.13345>
+-   with HMSC: <https://doi.org/10.1111/2041-210X.13345>
 
-sjSDM: <https://doi.org/10.1111/2041-210X.13687>
+-   sjSDM: <https://doi.org/10.1111/2041-210X.13687>
 
-       https://github.com/TheoreticalEcology/s-jSDM
+-   <https://github.com/TheoreticalEcology/s-jSDM>
 
 Useful literature:
 
-<https://doi.org/10.1111/ddi.12892>
+-   [@hao2019]
 
-ODMAP: A tandard protocol for reporting SDMs:
-<https://doi.org/10.1111/ecog.04960>
+-   ODMAP: A standard protocol for reporting SDMs [@zurell2020]
 
-Correcting sampling bias in MAxent: <https://doi.org/10.1111/ddi.12096>
+-   Correcting sampling bias in MAxent [@kramer-schadt2013]
