@@ -1,6 +1,6 @@
 --- 
-title: "A Minimal Book Example"
-author: "John Doe"
+title: "EcoMods Booklet"
+author: "The EcoMods Würzburg"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
@@ -8,14 +8,65 @@ bibliography: [book.bib, packages.bib]
 # url: your book url like https://bookdown.org/yihui/bookdown
 # cover-image: path to the social sharing image like images/cover.jpg
 description: |
-  This is a minimal example of using the bookdown package to write a book.
-  The HTML output format for this example is bookdown::gitbook,
-  set in the _output.yml file.
+  This is HowTo of the CCTB Würzburg EcoMods members.
 link-citations: yes
 github-repo: rstudio/bookdown-demo
 ---
 
-# About
+# Hello and welcome to the EcoMods working group!
+
+In this document, you will (hopefully) find everything you need for your
+course/internship/thesis with us. The very first things you should do
+before starting your work are:
+
+-   subscribe to the CCTB and EcoMods [mailing
+    lists](https://lists.uni-wuerzburg.de). Select CCTB and ecomod-cctb
+    and register using your email address. These lists are used for
+    announcements of talks or other important events.
+
+-   get an account in the CCTB server. Our IT support, Patrick Haag
+    (patrick.haag(at)uni-wuerzburg.de), can do this for you.
+
+-   get access to the building. Your student ID card needs to be
+    unlocked to be able to use it as a key for all doors. Patrick will
+    also help you with this.
+
+-   remind your supervisor to send you an invitation link for our
+    [Mattermost](https://cctb-intern.biologie.uni-wuerzburg.de). We use
+    Mattermost for CCTB-wide communication. Be aware that the
+    certificate for enabling https is self-signed. This means when you
+    visit the Mattermost site for the first time, you will have to add
+    it as an exception. Mattermost contains channels for different
+    purposes like organizational stuff, lunch planning, working groups,
+    etc. It is very similar to Slack, if you have used that before.
+    There is also a [Desktop
+    App](https://about.mattermost.com/download/#mattermostApps).
+
+-   save these time slots for obligatory participation:
+
+    -   weekly CCTB seminar, Wednesdays 11:00-12:00
+    -   weekly EcoMods lab meeting, Thursdays 13:30-15:00
+
+-   we also have a CCTB
+    [Gathertown](https://gather.town/app/r4oLVM25VSqeXimY/CCTB) which is
+    basically a virtual office space. It was used a lot during home
+    office times, now, not as much anymore. But if you post on
+    Mattermost that you would like to meet for a virtual coffee break,
+    people will show up!
+
+-   if you ever run into any IT-related problems that you cannot solve
+    alone, post it in the Mattermost IT channel.
+
+*Juliano*, do you have scripts for these points below that I could link?
+
+Playing with R Codes - Intro R - First Models - Intro Ecological
+Functions and Simulations Exercise - First Functions and Simulations -
+Shiny
+
+
+
+
+
 
 This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports; for example, a math equation $a^2 + b^2 = c^2$.
 
