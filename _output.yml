@@ -1,6 +1,7 @@
 bookdown::gitbook:
   css: style.css
-  fontsettings: theme: night
+  fontsettings: 
+    theme: night
   config:
     toc:
       before: |

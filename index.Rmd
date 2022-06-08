@@ -11,7 +11,6 @@ description: |
   This is HowTo of the CCTB Würzburg EcoMods members.
 link-citations: yes
 github-repo: CCTB-Ecomods/Ecomods-Booklet
-output: bookdown::html_document2
 editor_options: 
   markdown: 
     wrap: 72
