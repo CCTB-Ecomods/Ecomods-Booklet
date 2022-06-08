@@ -18,6 +18,11 @@ editor_options:
 
 # Hello and welcome to the EcoMods working group!
 
+
+```{r EcoMods, fig.cap="The EcoMods in 2020", echo=FALSE}
+knitr::include_graphics("booklet_pictures/workingGroup_2021.jpg")
+```
+
 In this document, you will (hopefully) find everything you need for your
 course / internship / thesis with us. The very first things you should
 do before starting your work are:
@@ -65,16 +70,46 @@ do before starting your work are:
 We hope that this document helps you to learn more about how to do
 Ecological Modeling and how to navigate life at the CCTB. If you have
 any questions, you can come by our offices or send us an email any time.
+You'll find information about the following topics:
+
+-   **Programming tools** in Chapter \@ref(programming-tools)
+
+-   **IT infrastructure** in Chapter \@ref(it-infrastructure)
+
+-   **Process based models** in Chapter \@ref(process-based-models)
+
+-   **Computational methods** in Chapter \@ref(computational-methods)
+
+-   **Project management** in Chapter \@ref(project-management)
+
+-   **Writing & Publishing** in Chapter \@ref(writing-publishing)
 
 We also gladly accept any suggestions on how to improve this guide, so
 let us (Figure \@ref(fig:EcoMods)) know if you feel that anything is
 missing!
 
-```{r EcoMods, fig.cap="The EcoMods in 2020", echo=FALSE}
-knitr::include_graphics("booklet_pictures/workingGroup_2021.jpg")
-```
 
 ## How to edit this booklet
+
+This booklet is written as bookdown document. This means, that it
+consists of several R Markdown files. To learn R markdown see section
+\@ref(rmd). The booklet is hosted on
+[GitHub](https://github.com/CCTB-Ecomods/Ecomods-Booklet) (see section
+\@ref(version-control).
+
+1.  Step: Clone the repository from GitHub.
+
+2.  Step: Open the .rmd file of the Chapter you would like to change.
+
+3.  Step: Do your changes.
+
+4.  Step: Commit your changes and push them on GitHub.
+
+5.  Step: Then the magic happens: via github actions the website will be
+    updated, but this takes 5-10 Minutes (check the green dot!). This
+    creates files that are pushed automatically. Therefore, don't work
+    within the Repo while waiting and pull the changes before you go on
+    editing.
 
 ## Missing sections & TODOs
 
