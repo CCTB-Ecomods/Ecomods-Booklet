@@ -1,12 +1,8 @@
 Welcome! 
 
-This is a minimal example of a book based on R Markdown and **bookdown** (https://github.com/rstudio/bookdown). 
+This is the GitHub project that creates the (GitHub page)[https://cctb-ecomods.github.io/Ecomods-Booklet/] with the EcoMods Booklet of the Ecological Modeling Working Group of the University of Würzburg. 
 
-This template provides a skeleton file structure that you can edit to create your book. 
-
-The contents inside the .Rmd files provide some pointers to help you get started, but feel free to also delete the content in each file and start fresh.
-
-Additional resources:
+Additional resources about how to learn bookdown:
 
 The **bookdown** book: https://bookdown.org/yihui/bookdown/
 
