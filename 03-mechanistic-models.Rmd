@@ -6,7 +6,6 @@ editor_options:
 
 # Process-based models
 
-
 ## EcoMods models
 
 Here, you will find all of our working group's models. For specific
@@ -21,10 +20,13 @@ TODO Robin
 MGM (Macrophyte Growth Model) is a process-based, eco-physiological
 model simulating the growth of submerged macrophytes under different
 environmental conditions. MGM is a simplified re-implementation of
-Charisma 2.0 [@vannes2003] in Julia language.
+Charisma 2.0 [@vannes2003] in Julia language. The model scheme is
+depicted in \@ref(fig:MGM) .
 
-![Model phylogeny of MGM (a) and simplified model scheme
-(b).](booklet_pictures/MGM.png){#mgm}
+```{r MGM, fig.cap="Model phylogeny of MGM (a) and simplified model scheme (b).", echo=FALSE}
+knitr::include_graphics("booklet_pictures/MGM.png")
+```
+
 
 Documentation and code is open access on
 [GitHub](https://github.com/AnneLew/MGM).

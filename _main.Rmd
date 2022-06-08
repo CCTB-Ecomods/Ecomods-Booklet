@@ -68,14 +68,18 @@ Ecological Modeling and how to navigate life at the CCTB. If you have
 any questions, you can come by our offices or send us an email any time.
 
 We also gladly accept any suggestions on how to improve this guide, so
-let us (Figure \@ref(fig:EcoMods)) know if you feel that anything is
-missing!
+let us (\@ref(fig:EcoMods)) know if you feel that anything is missing!
+
+
+
 
 ```{r EcoMods, fig.cap="The EcoMods in 2020", echo=FALSE}
 knitr::include_graphics("booklet_pictures/workingGroup_2021.jpg")
 ```
 
 ## How to edit this booklet
+
+
 
 ## Missing sections & TODOs
 
@@ -84,3 +88,131 @@ knitr::include_graphics("booklet_pictures/workingGroup_2021.jpg")
 Playing with R Codes - Intro R - First Models - Intro Ecological
 Functions and Simulations Exercise - First Functions and Simulations -
 Shiny
+
+<!--chapter:end:index.Rmd-->
+
+
+# Programming tools
+
+Placeholder
+
+
+## Basic tools and languages
+### R
+#### Interface
+#### Resources
+#### Packages
+#### Rmd
+### Julia, the language
+#### Best tutorials
+#### Plotting in Julia
+#### Interface
+### Version control
+### Bash commands
+## Advanced tools
+### Singularity
+### EMACS, Vim, and Spacemacs
+### Regex
+### Backup and Storage of Data and Code
+## Best practices
+### Best Modeling and Programming practices
+### Blog post series on software development
+
+<!--chapter:end:01-basic-tools.Rmd-->
+
+
+# IT infrastructure
+
+Placeholder
+
+
+## SSH
+### Connect with SSH
+### Using SSH to authenticate your Github account TODO: move to Github section OR set links
+#### Step 1: Generate an SSH keypair on the server and copy public key to Github
+#### Step 2: Test the connection
+### ssh alias
+## Using HPC Julia
+### Calculate you CO2 Emission from HPC
+## Using slurm
+## Using CCTB Server = gaias and planets
+### Opening an Rstudio server on the planets
+## X2GO
+
+<!--chapter:end:02-it-infrastructure.Rmd-->
+
+
+# Process-based models
+
+Placeholder
+
+
+## EcoMods models
+### GeMM
+### MGM
+### metaRange
+#### R version
+#### Julia Version
+
+<!--chapter:end:03-mechanistic-models.Rmd-->
+
+
+# Computational methods
+
+Placeholder
+
+
+## Sensitivity Analyses
+### Overview
+### Local
+### Global
+## Virtual ecologist
+## Parameter optimization
+### Direct methods
+### Bayesian Calibration
+### Neural networks
+### Tips and Tricks
+## Machine Learning
+## Phylogenetic Analyses
+## Functional Analyses
+## SDMs
+
+<!--chapter:end:04-methods.Rmd-->
+
+
+# Project management
+
+Placeholder
+
+
+## Computational Notebooks
+## Excel-based orga
+## Pomodoro timer
+## Asana
+## Finishing a PhD 
+
+<!--chapter:end:05-project-management.Rmd-->
+
+
+# Writing & Publishing
+
+Placeholder
+
+
+## Tools
+### latex
+### Others
+## Writing Papers
+### Structuring the manuscript
+### Language Tips
+## Rebuttal Letters
+## Reviewing Papers
+
+<!--chapter:end:06-writing-publishing.Rmd-->
+
+`r if (knitr::is_html_output()) '
+# References {-}
+'`
+
+<!--chapter:end:07-references.Rmd-->
+

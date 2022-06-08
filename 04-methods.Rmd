@@ -33,9 +33,7 @@ comparison between data and model (as you would use in the validation)
 ### Global
 
 Morris screening and enhancement as used in the R package sensitivity
-(Campolongo et al.):
-[\<https://doi.org/10.1016/j.envsoft.2006.10.004\>](https://doi.org/10.1016/j.envsoft.2006.10.004){.uri}
-[@campolongo2007]
+(Campolongo 2007).
 
 ## Virtual ecologist
 
