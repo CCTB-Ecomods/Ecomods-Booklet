@@ -15,10 +15,6 @@ to connect to the respective servers.
 
 ### Connect with SSH
 
-*Anne*
-
-I have a .pdf tutorial - where should I store that?
-
 There's several ways to connect directly to the servers. Apple and Linux
 have inbuilt ssh clients in the terminal. From Windows 10 onward
 powershell also comes with an ssh client, though be aware it does have
@@ -43,8 +39,7 @@ Curta). Check if you have existing ssh keys with
 
     ls -al ~/.ssh
 
-Generate a new ssh key (If you have existing keys, jump to step 5):
-\#TODO what do you mean jump to step 5?? there is only two steps?
+Generate a new ssh key:
 
     ssh-keygen -t ed25519 -C "your_email@example.com
 
@@ -142,7 +137,7 @@ TODO: how to do a key pair
 
 ## Using HPC Julia
 
-Robin - check over it
+Robin - check over it TODO
 
 [General information](https://doku.hpc.uni-wuerzburg.de/) by the Julia support
 
@@ -245,7 +240,7 @@ location and put no to all additional questions asked about CPU
 
 ## Using slurm
 
-Robin\
+Robin TODO \
 [SLURM](https://slurm.schedmd.com/overview.html) is the resource manager
 running on the gaias and the julia log-in node. It's job is to
 distribute tasks thorough the run-time among the planets so you and

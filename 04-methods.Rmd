@@ -30,10 +30,14 @@ comparison between data and model (as you would use in the validation)
 
 = One-factor-at-a-time (OAT)
 
+TODO Anne
+
 ### Global
 
 Morris screening and enhancement as used in the R package sensitivity
 (Campolongo 2007).
+
+TODO Anne
 
 ## Virtual ecologist
 
@@ -46,6 +50,8 @@ TODO
 Differential evolution optimization Differential Evolution with DEoptim
 (R package) How does differential evolution work?
 
+TODO Anne
+
 ### Bayesian Calibration
 
 florianhartig/LearningBayes: An introduction to Bayesian statistics
@@ -53,8 +59,11 @@ Bayesian Tools - General-Purpose MCMC and SMC Samplers and Tools for
 Bayesian Statistics Inverse modeling
 <https://arxiv.org/ftp/arxiv/papers/2007/2007.15580.pdf>
 
-\#\#\# Emulatoren Approximieren das Modell selbst "modelling a model" /
-"meta-model"
+### Emulatoren 
+
+Approximieren das Modell selbst "modelling a model" / "meta-model"
+
+TODO
 
 ### Neural networks
 
@@ -62,7 +71,9 @@ Bayesian Statistics Inverse modeling
 <https://link.springer.com/chapter/10.1007%2F978-3-030-44584-3_43>
 <https://royalsocietypublishing.org/doi/10.1098/rsbl.2017.0660>
 
-\#\#\#\# Bayesian <https://bg.copernicus.org/articles/15/5801/2018/>
+Bayesian <https://bg.copernicus.org/articles/15/5801/2018/>
+
+TODO
 
 ### Tips and Tricks
 
@@ -92,30 +103,21 @@ few as 4 species.
 
 For multivariate analyses:
 
--   
+-   MANOVA (because traits are not independent from one another) and
+    canonical discriminant analyses (CDA) =Y check R package candisc
 
-    i)  MANOVA (because traits are not independent from one another) and
-        canonical discriminant analyses (CDA) =Y check R package candisc
+-   trait network analyses (R package igraph - Csardi and Nepusz, 2006)
 
--   
+    -   Mantel test for comparing trait correlations across groups (e.g.
+        taxonomic, trophic or guild groups)
 
-    ii) trait network analyses (R package igraph - Csardi and Nepusz,
-
-    ```{=html}
-    <!-- -->
-    ```
-    2006) 
-
-          -   Mantel test for comparing trait correlations across groups
-              (e.g. taxonomic, trophic or guild groups)
-
--   
-
-    iii) PCA (useful for visualization as well)
+-   PCA (useful for visualization as well)
 
 ## SDMs
 
 ToDo: WHAT IS A SDM?
+
+TODO: organize better and make references readable
 
 Tutorials:
 

@@ -18,14 +18,16 @@ editor_options:
 
 # Hello and welcome to the EcoMods working group!
 
-
 ```{r EcoMods, fig.cap="The EcoMods in 2020", echo=FALSE}
 knitr::include_graphics("booklet_pictures/workingGroup_2021.jpg")
 ```
 
 In this document, you will (hopefully) find everything you need for your
-course / internship / thesis with us. The very first things you should
-do before starting your work are:
+course / internship / thesis with us.
+
+## Very first things
+
+The very first things you should do before starting your work are:
 
 -   **Mailinglists**: subscribe to the CCTB and EcoMods [mailing
     lists](https://lists.uni-wuerzburg.de). Select CCTB and ecomod-cctb
@@ -70,6 +72,9 @@ do before starting your work are:
 We hope that this document helps you to learn more about how to do
 Ecological Modeling and how to navigate life at the CCTB. If you have
 any questions, you can come by our offices or send us an email any time.
+
+## What you can find in this booklet
+
 You'll find information about the following topics:
 
 -   **Programming tools** in Chapter \@ref(programming-tools)
@@ -86,8 +91,8 @@ You'll find information about the following topics:
 
 We also gladly accept any suggestions on how to improve this guide, so
 let us (Figure \@ref(fig:EcoMods)) know if you feel that anything is
-missing!
-
+missing! This document is under constant construction, so don't wonder
+about missing parts. :)
 
 ## How to edit this booklet
 
@@ -108,13 +113,30 @@ consists of several R Markdown files. To learn R markdown see section
 5.  Step: Then the magic happens: via github actions the website will be
     updated, but this takes 5-10 Minutes (check the green dot!). This
     creates files that are pushed automatically. Therefore, don't work
-    within the Repo while waiting and pull the changes before you go on
-    editing.
+    within the Repo while waiting and **pull the changes** before you go
+    on editing.
 
-## Missing sections & TODOs
+Don't forget to add links, citations, figures etc in a nice and
+organized way. Check text for typos and readability and be sure that a
+beginner can understand it.
+
+## Missing sections and TODOs within this booklet
+
+If you find any missing topics, collect them here or write a *TODO* at
+the appropriate part.
+
+### TODOs Juliano
 
 *Juliano*, do you have scripts for these points below that I could link?
 
 Playing with R Codes - Intro R - First Models - Intro Ecological
 Functions and Simulations Exercise - First Functions and Simulations -
 Shiny
+
+### TODOs Anne
+
+-   improve sections \@ref(sensitivity-analyses) and
+    \@ref(parameter-optimization)
+-   add more language tips \@ref(language-tips)
+
+### 
