@@ -1,8 +1,13 @@
 fig:EcoMods
 fig:MGM
 hello-and-welcome-to-the-ecomods-working-group
+very-first-things
+what-you-can-find-in-this-booklet
 how-to-edit-this-booklet
-missing-sections-todos
+missing-sections-and-todos-within-this-booklet
+todos-juliano
+todos-anne
+section
 programming-tools
 basic-tools-and-languages
 r
@@ -53,6 +58,7 @@ virtual-ecologist
 parameter-optimization
 direct-methods
 bayesian-calibration
+emulatoren
 neural-networks
 tips-and-tricks
 machine-learning
