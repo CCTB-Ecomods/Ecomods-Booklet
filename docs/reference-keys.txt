@@ -1,4 +1,7 @@
+fig:EcoMods
+fig:MGM
 hello-and-welcome-to-the-ecomods-working-group
+how-to-edit-this-booklet
 missing-sections-todos
 programming-tools
 basic-tools-and-languages
