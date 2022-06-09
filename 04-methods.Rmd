@@ -59,7 +59,7 @@ Bayesian Tools - General-Purpose MCMC and SMC Samplers and Tools for
 Bayesian Statistics Inverse modeling
 <https://arxiv.org/ftp/arxiv/papers/2007/2007.15580.pdf>
 
-### Emulatoren 
+### Emulatoren
 
 Approximieren das Modell selbst "modelling a model" / "meta-model"
 
@@ -147,7 +147,7 @@ Packages:
 
 -   kuenm: <https://peerj.com/articles/6281/>
 
--   virtualspecies: <https://doi.org/10.1111/ecog.01388>
+-   virtualspecies [@leroy2015]
 
 -   <https://cran.r-project.org/web/packages/virtualspecies/virtualspecies.pdf>
 
