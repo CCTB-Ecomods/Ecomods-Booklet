@@ -13,8 +13,15 @@ questions for each model, please refer to the respective lab member.
 
 ### GeMM
 
-TODO Robin
+[GeMM](https://github.com/CCTB-Ecomods/gemm) (Genomically explicit Metabolic 
+Model) is an individual based model that includes genomic processes. While first
+used as a plant model later extensions for it were focused on genomic simulation
+of *Zosterops*, a small passerine. The general organisation of the model can be
+found in \@ref(fig:GeMM)
 
+```{r GeMM, fig.cap="Biological organisation of GeMM objects (a) and simulation loop (b).", echo=FALSE}
+knitr::include_graphics("booklet_pictures/GeMM.png")
+```
 ### MGM
 
 MGM (Macrophyte Growth Model) is a process-based, eco-physiological
